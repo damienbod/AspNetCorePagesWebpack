@@ -1,1 +1,1 @@
-# AspNetCorePagesWebpack
+# ASP.NET Core Pages Bootstrap 4 application with Webpack, Typescript, npm

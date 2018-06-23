@@ -1,0 +1,6 @@
+/AspNetCorePagesWebpack/bin
+/.vs/AspNetCorePagesWebpack/v15
+/AspNetCorePagesWebpack/node_modules
+/AspNetCorePagesWebpack/obj
+/AspNetCorePagesWebpack/wwwroot/dist
+/AspNetCorePagesWebpack/wwwroot/css

@@ -4,3 +4,13 @@
 /AspNetCorePagesWebpack/obj
 /AspNetCorePagesWebpack/wwwroot/dist
 /AspNetCorePagesWebpack/wwwroot/css
+/.vs
+/AspNetCorePagesWebpack/wwwroot/assets
+/AspNetCorePagesWebpack/Client/main.js
+/AspNetCorePagesWebpack/Client/main.js.map
+/AspNetCorePagesWebpack/Client/polyfills.js
+/AspNetCorePagesWebpack/Client/polyfills.js.map
+/AspNetCorePagesWebpack/Client/vendor.development.js
+/AspNetCorePagesWebpack/Client/vendor.development.js.map
+/AspNetCorePagesWebpack/Client/vendor.production.js
+/AspNetCorePagesWebpack/Client/vendor.production.js.map

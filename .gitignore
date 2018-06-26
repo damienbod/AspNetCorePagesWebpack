@@ -17,3 +17,6 @@
 /AspNetCorePagesIdentity/obj
 /AspNetCorePagesIdentity/bin
 /AspNetCorePagesIdentity/node_modules
+/AspNetCorePagesIdentity/wwwroot/css
+/AspNetCorePagesIdentity/wwwroot/dist
+/AspNetCorePagesIdentity/wwwroot/assets

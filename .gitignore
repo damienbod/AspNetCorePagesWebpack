@@ -14,3 +14,5 @@
 /AspNetCorePagesWebpack/Client/vendor.development.js.map
 /AspNetCorePagesWebpack/Client/vendor.production.js
 /AspNetCorePagesWebpack/Client/vendor.production.js.map
+/AspNetCorePagesIdentity/obj
+/AspNetCorePagesIdentity/bin

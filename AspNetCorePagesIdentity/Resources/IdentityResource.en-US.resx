@@ -274,4 +274,10 @@
   <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
     <value>Invalid login attempt.</value>
   </data>
+  <data name="LOCKED_OUT" xml:space="preserve">
+    <value>Locked out</value>
+  </data>
+  <data name="LOCKED_OUT_TEXT" xml:space="preserve">
+    <value>This account has been locked out, please try again later.</value>
+  </data>
 </root>

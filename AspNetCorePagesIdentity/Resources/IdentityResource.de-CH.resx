@@ -154,7 +154,7 @@
     <value>Bestätigen Sie Ihre E-Mail Adresse</value>
   </data>
   <data name="CONFIRM_YOUR_EMAIL_TEXT" xml:space="preserve">
-    <value>Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;. de</value>
+    <value>Bitte bestätigen Sie Ihr Konto, indem Sie hier &lt;a href='{0}'&gt;klicken&lt;/a&gt;. </value>
   </data>
   <data name="consentNoDoNotAllow" xml:space="preserve">
     <value>No, Do Not Allow de</value>
@@ -207,6 +207,12 @@
   </data>
   <data name="language" xml:space="preserve">
     <value>Sprache</value>
+  </data>
+  <data name="LOCKED_OUT" xml:space="preserve">
+    <value>Ausgeschlossen</value>
+  </data>
+  <data name="LOCKED_OUT_TEXT" xml:space="preserve">
+    <value>Dieser Account wurde gesperrt. Bitte versuchen Sie es später erneut.</value>
   </data>
   <data name="logout" xml:space="preserve">
     <value>Logout</value>

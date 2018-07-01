@@ -144,11 +144,11 @@
   <data name="associationForm" xml:space="preserve">
     <value>Association Form de</value>
   </data>
-  <data name="confirmPasswordNotMatching" xml:space="preserve">
-    <value>Passwort und Passwortbestätigung stimmen nicht überein.</value>
-  </data>
   <data name="CONFIRM_PASSWORD" xml:space="preserve">
     <value>Passwort bestätigen</value>
+  </data>
+  <data name="CONFIRM_PASSWORD_NOT_MATCHING" xml:space="preserve">
+    <value>Passwort und Passwortbestätigung stimmen nicht überein.</value>
   </data>
   <data name="CONFIRM_YOUR_EMAIL" xml:space="preserve">
     <value>Bestätigen Sie Ihre E-Mail Adresse</value>

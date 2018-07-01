@@ -58,7 +58,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "CONFIRM_PASSWORD_NOT_MATCHING")]
             public string ConfirmPassword { get; set; }
         }
 

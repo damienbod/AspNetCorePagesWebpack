@@ -43,6 +43,7 @@ namespace AspNetCorePagesIdentity
 
             /**** Localization configuration ****/
             services.AddSingleton<IdentityLocalizationService>();
+            services.AddSingleton<SharedLocalizationService>();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
 
             services.Configure<RequestLocalizationOptions>(

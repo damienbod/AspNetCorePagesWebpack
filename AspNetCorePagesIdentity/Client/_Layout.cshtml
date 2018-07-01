@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@inject SharedLocalizationService SharedLocalizer
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -26,13 +28,13 @@
             <div class="collapse navbar-collapse" id="topNavbarCollapse">
                 <ul class="mr-auto navbar-nav">
                     <li class="nav-item">
-                        <a asp-page="/Index" class="nav-link">Home</a>
+                        <a asp-page="/Index" class="nav-link">@SharedLocalizer.GetLocalizedHtmlString("HOME")</a>
                     </li>
                     <li class="nav-item">
-                        <a asp-page="/About" class="nav-link">About</a>
+                        <a asp-page="/About" class="nav-link">@SharedLocalizer.GetLocalizedHtmlString("ABOUT")</a>
                     </li>
                     <li class="nav-item">
-                        <a asp-page="/Contact" class="nav-link">Contact</a>
+                        <a asp-page="/Contact" class="nav-link">@SharedLocalizer.GetLocalizedHtmlString("CONTACT")</a>
                     </li>
                 </ul>
                 <partial name="_LoginPartial" />
@@ -55,7 +57,7 @@
         <hr />
         <footer>
 
-            <p>language switch from: https://andrewlock.net/adding-localisation-to-an-asp-net-core-application/</p>
+            @*<p>language switch from: https://andrewlock.net/adding-localisation-to-an-asp-net-core-application/</p>*@
 
 
             @using System.Threading.Tasks
@@ -76,8 +78,8 @@
 
             <div title="@Localizer["Request culture provider:"] @requestCulture?.Provider?.GetType().Name">
                 <form id="selectLanguage" asp-controller="SetLanguage" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path" method="post" class="form-horizontal" role="form">
-                    @Localizer["Language:"] <select name="culture" asp-for="@requestCulture.RequestCulture.UICulture.Name" asp-items="cultureItems"></select>
-                    <button type="submit" class="btn btn-default btn-xs">Save</button>
+                    @SharedLocalizer.GetLocalizedHtmlString("LANGUAGE") <select name="culture" asp-for="@requestCulture.RequestCulture.UICulture.Name" asp-items="cultureItems"></select>
+                    <button type="submit" class="btn btn-default btn-xs"> @SharedLocalizer.GetLocalizedHtmlString("SAVE")</button>
                 </form>
             </div>
         </footer>

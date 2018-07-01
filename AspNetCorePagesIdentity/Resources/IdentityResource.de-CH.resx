@@ -144,6 +144,12 @@
   <data name="associationForm" xml:space="preserve">
     <value>Association Form de</value>
   </data>
+  <data name="CONFIRM_EMAIL" xml:space="preserve">
+    <value>E-Mail Adresse Bestätigung</value>
+  </data>
+  <data name="CONFIRM_EMAIL_TEXT" xml:space="preserve">
+    <value>Vielen Dank für die Bestätigung Ihrer E-Mail.</value>
+  </data>
   <data name="CONFIRM_PASSWORD" xml:space="preserve">
     <value>Passwort bestätigen</value>
   </data>

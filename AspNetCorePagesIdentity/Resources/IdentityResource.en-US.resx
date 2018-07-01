@@ -265,6 +265,12 @@
   <data name="ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN" xml:space="preserve">
     <value>Use a local account to log in.</value>
   </data>
+  <data name="CONFIRM_EMAIL" xml:space="preserve">
+    <value>Confirm email</value>
+  </data>
+  <data name="CONFIRM_EMAIL_TEXT" xml:space="preserve">
+    <value>Thank you for confirming your email.</value>
+  </data>
   <data name="CONFIRM_YOUR_EMAIL" xml:space="preserve">
     <value>Confirm your email</value>
   </data>

@@ -202,6 +202,12 @@
     <value>Please enter an email address for this site below and click the Register button to finish
  logging in. de</value>
   </data>
+  <data name="FORGOT_PASSWORD_CONFIRMATION" xml:space="preserve">
+    <value>Passwort vergessen Bestätigung</value>
+  </data>
+  <data name="FORGOT_PASSWORD_CONFIRMATION_TEXT" xml:space="preserve">
+    <value>Bitte überprüfen Sie Ihre E-Mail, um Ihr Passwort zurückzusetzen.</value>
+  </data>
   <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
     <value>Haben Sie Ihr Passwort vergessen</value>
   </data>

@@ -283,6 +283,12 @@
   <data name="CONFIRM_YOUR_EMAIL_TEXT" xml:space="preserve">
     <value>Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;.</value>
   </data>
+  <data name="FORGOT_PASSWORD_CONFIRMATION" xml:space="preserve">
+    <value>Forgot password confirmation</value>
+  </data>
+  <data name="FORGOT_PASSWORD_CONFIRMATION_TEXT" xml:space="preserve">
+    <value>Please check your email to reset your password.</value>
+  </data>
   <data name="FORGOT_YOUR_PASSWORD_ENTER_EMAIL" xml:space="preserve">
     <value>Enter your email.</value>
   </data>

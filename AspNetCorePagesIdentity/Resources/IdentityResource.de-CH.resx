@@ -130,13 +130,13 @@
     <value>Einloggen</value>
   </data>
   <data name="ACCOUNT_NO_EXTERNAL_LOGINS" xml:space="preserve">
-    <value>There are no external authentication services configured. See this article https://go.microsoft.com/fwlink/?LinkID=532715 for details on setting up this ASP.NET application to support logging in via external services. de</value>
+    <value>Es sind keine externen Authentifizierungsdienste konfiguriert. Informationen zum Einrichten dieser ASP.NET-Anwendung für die Anmeldung über externe Dienste finden Sie in diesem Artikel unter https://go.microsoft.com/fwlink/?LinkID=532715. </value>
   </data>
   <data name="ACCOUNT_USE_ANOTHER_SERVICE_LOG_IN" xml:space="preserve">
-    <value>Use another service to log in. de</value>
+    <value>Verwenden Sie einen anderen Dienst, um sich anzumelden.</value>
   </data>
   <data name="ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN" xml:space="preserve">
-    <value>Use a local account to log in. de</value>
+    <value>Verwenden Sie einen lokalen Benutzer um sich anzumelden.</value>
   </data>
   <data name="applicationAccess" xml:space="preserve">
     <value>Application Access de</value>

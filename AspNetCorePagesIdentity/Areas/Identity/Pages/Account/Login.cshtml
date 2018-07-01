@@ -4,14 +4,14 @@
     ViewData["Title"] = "Log in";
 }
 @using System.Globalization
-@inject LocService SharedLocalizer
+@inject IdentityLocalizationService IdentityLocalizer
 
 <h2>@ViewData["Title"] @CultureInfo.CurrentCulture</h2>
 <div class="row">
     <div class="col-md-4">
         <section>
             <form method="post">
-                <h4>Use a local account to log in. @SharedLocalizer.GetLocalizedHtmlString("passwordRequired")</h4>
+                <h4>Use a local account to log in. @IdentityLocalizer.GetLocalizedHtmlString("passwordRequired")</h4>
                 <hr />
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="form-group">

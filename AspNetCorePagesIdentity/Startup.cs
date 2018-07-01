@@ -42,7 +42,7 @@ namespace AspNetCorePagesIdentity
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             /**** Localization configuration ****/
-            services.AddSingleton<LocService>();
+            services.AddSingleton<IdentityLocalizationService>();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
 
             services.Configure<RequestLocalizationOptions>(
@@ -66,7 +66,7 @@ namespace AspNetCorePagesIdentity
                 {
                     options.DataAnnotationLocalizerProvider = (type, factory) =>
                     {
-                        var assemblyName = new AssemblyName(typeof(SharedResource).GetTypeInfo().Assembly.FullName);
+                        var assemblyName = new AssemblyName(typeof(IdentityResource).GetTypeInfo().Assembly.FullName);
                         return factory.Create("SharedResource", assemblyName.Name);
                     };
                 });

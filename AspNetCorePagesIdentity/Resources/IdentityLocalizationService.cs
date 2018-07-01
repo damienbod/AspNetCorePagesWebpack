@@ -3,15 +3,15 @@ using System.Reflection;
 
 namespace AspNetCorePagesIdentity.Resources
 {
-    public class LocService
+    public class IdentityLocalizationService
     {
         private readonly IStringLocalizer _localizer;
 
-        public LocService(IStringLocalizerFactory factory)
+        public IdentityLocalizationService(IStringLocalizerFactory factory)
         {
-            var type = typeof(SharedResource);
+            var type = typeof(IdentityResource);
             var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
-            _localizer = factory.Create("SharedResource", assemblyName.Name);
+            _localizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         public LocalizedString GetLocalizedHtmlString(string key)

@@ -120,11 +120,11 @@
   <data name="PASSWORD" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="register" xml:space="preserve">
+  <data name="REGISTER" xml:space="preserve">
     <value>Register</value>
   </data>
-  <data name="confirmPassword" xml:space="preserve">
-    <value>confirm Password</value>
+  <data name="CONFIRM_PASSWORD" xml:space="preserve">
+    <value>Confirm Password</value>
   </data>
   <data name="confirmPasswordNotMatching" xml:space="preserve">
     <value>The password and confirmation password do not match.</value>
@@ -264,6 +264,9 @@
   </data>
   <data name="ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN" xml:space="preserve">
     <value>Use a local account to log in.</value>
+  </data>
+  <data name="CONFIRM_YOUR_EMAIL" xml:space="preserve">
+    <value>Confirm your email</value>
   </data>
   <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
     <value>Invalid login attempt.</value>

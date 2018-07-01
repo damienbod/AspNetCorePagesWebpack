@@ -144,11 +144,14 @@
   <data name="associationForm" xml:space="preserve">
     <value>Association Form de</value>
   </data>
-  <data name="confirmPassword" xml:space="preserve">
-    <value>Passwort bestätigen</value>
-  </data>
   <data name="confirmPasswordNotMatching" xml:space="preserve">
     <value>Passwort und Passwortbestätigung stimmen nicht überein.</value>
+  </data>
+  <data name="CONFIRM_PASSWORD" xml:space="preserve">
+    <value>Passwort bestätigen</value>
+  </data>
+  <data name="CONFIRM_YOUR_EMAIL" xml:space="preserve">
+    <value>Bestätigen Sie Ihre E-Mail Adresse</value>
   </data>
   <data name="consentNoDoNotAllow" xml:space="preserve">
     <value>No, Do Not Allow de</value>
@@ -229,7 +232,7 @@
   <data name="phoneNumberRequired" xml:space="preserve">
     <value>Telefon erforderlich</value>
   </data>
-  <data name="register" xml:space="preserve">
+  <data name="REGISTER" xml:space="preserve">
     <value>Registrieren</value>
   </data>
   <data name="registerExistingUser" xml:space="preserve">

@@ -27,9 +27,8 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
 
-                var type = typeof(IdentityResource);
-                var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
-
+             var type = typeof(IdentityResource);
+             var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
             _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
 
             }

@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Localization;
+using AspNetCorePagesIdentity.Resources;
+using System.Reflection;
 
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
 {
@@ -17,12 +20,19 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly IStringLocalizer _identityLocalizer;
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<IdentityUser> signInManager, ILogger<LoginModel> logger, IStringLocalizerFactory factory)
         {
             _signInManager = signInManager;
             _logger = logger;
-        }
+
+                var type = typeof(IdentityResource);
+                var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
+
+            }
 
         [BindProperty]
         public InputModel Input { get; set; }
@@ -89,7 +99,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError(string.Empty, _identityLocalizer["INVALID_LOGIN_ATTEMPT"]);
                     return Page();
                 }
             }

@@ -265,4 +265,7 @@
   <data name="ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN" xml:space="preserve">
     <value>Use a local account to log in.</value>
   </data>
+  <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
+    <value>Invalid login attempt.</value>
+  </data>
 </root>

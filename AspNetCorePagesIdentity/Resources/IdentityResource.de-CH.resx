@@ -190,6 +190,9 @@
   <data name="home" xml:space="preserve">
     <value>Startseite</value>
   </data>
+  <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
+    <value>Ungültiger Anmeldeversuch.</value>
+  </data>
   <data name="isAdmin" xml:space="preserve">
     <value>Administrator</value>
   </data>

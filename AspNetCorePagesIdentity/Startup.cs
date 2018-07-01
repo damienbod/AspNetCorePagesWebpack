@@ -67,7 +67,7 @@ namespace AspNetCorePagesIdentity
                     options.DataAnnotationLocalizerProvider = (type, factory) =>
                     {
                         var assemblyName = new AssemblyName(typeof(IdentityResource).GetTypeInfo().Assembly.FullName);
-                        return factory.Create("SharedResource", assemblyName.Name);
+                        return factory.Create("IdentityResource", assemblyName.Name);
                     };
                 });
         }

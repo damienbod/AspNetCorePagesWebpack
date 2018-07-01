@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="password" xml:space="preserve">
+  <data name="PASSWORD" xml:space="preserve">
     <value>Password</value>
   </data>
   <data name="register" xml:space="preserve">
@@ -132,13 +132,13 @@
   <data name="createNewAccount" xml:space="preserve">
     <value>Create a new account.</value>
   </data>
-  <data name="email" xml:space="preserve">
+  <data name="EMAIL" xml:space="preserve">
     <value>E-Mail</value>
   </data>
   <data name="emailInvalid" xml:space="preserve">
     <value>invalid Email</value>
   </data>
-  <data name="emailRequired" xml:space="preserve">
+  <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>Email required</value>
   </data>
   <data name="isAdmin" xml:space="preserve">
@@ -150,7 +150,7 @@
   <data name="accessCodeRequired" xml:space="preserve">
     <value>accessCode required</value>
   </data>
-  <data name="passwordRequired" xml:space="preserve">
+  <data name="PASSWORD_REQUIRED" xml:space="preserve">
     <value>Password required</value>
   </data>
   <data name="phoneNumberRequired" xml:space="preserve">
@@ -217,7 +217,7 @@
   <data name="personalInformation" xml:space="preserve">
     <value>Personal Information</value>
   </data>
-  <data name="rememberMe" xml:space="preserve">
+  <data name="REMEMBER_ME" xml:space="preserve">
     <value>Remember me</value>
   </data>
   <data name="rememberMyDecision" xml:space="preserve">
@@ -229,14 +229,14 @@
   <data name="youAreNowLoggedOut" xml:space="preserve">
     <value>You are now logged out</value>
   </data>
-  <data name="forgotYourPassword" xml:space="preserve">
+  <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
     <value>Forgot your password</value>
   </data>
-  <data name="login" xml:space="preserve">
+  <data name="ACCOUNT_LOGIN" xml:space="preserve">
     <value>Log  in</value>
   </data>
-  <data name="registerAsNewUser" xml:space="preserve">
-    <value>Als neuer Benutzer/in registrieren?</value>
+  <data name="REGISTER_AS_NEW_USER" xml:space="preserve">
+    <value>Register as a new user</value>
   </data>
   <data name="registerUserError" xml:space="preserve">
     <value>Fehler beim Registrieren einer Benutzerin/eines Benutzers</value>
@@ -255,5 +255,14 @@
   </data>
   <data name="home" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="ACCOUNT_NO_EXTERNAL_LOGINS" xml:space="preserve">
+    <value>There are no external authentication services configured. See this article https://go.microsoft.com/fwlink/?LinkID=532715 for details on setting up this ASP.NET application to support logging in via external services.</value>
+  </data>
+  <data name="ACCOUNT_USE_ANOTHER_SERVICE_LOG_IN" xml:space="preserve">
+    <value>Use another service to log in.</value>
+  </data>
+  <data name="ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN" xml:space="preserve">
+    <value>Use a local account to log in.</value>
   </data>
 </root>

@@ -126,6 +126,18 @@
   <data name="accessCodeRequired" xml:space="preserve">
     <value>accessCode erforderlich</value>
   </data>
+  <data name="ACCOUNT_LOGIN" xml:space="preserve">
+    <value>Einloggen</value>
+  </data>
+  <data name="ACCOUNT_NO_EXTERNAL_LOGINS" xml:space="preserve">
+    <value>There are no external authentication services configured. See this article https://go.microsoft.com/fwlink/?LinkID=532715 for details on setting up this ASP.NET application to support logging in via external services. de</value>
+  </data>
+  <data name="ACCOUNT_USE_ANOTHER_SERVICE_LOG_IN" xml:space="preserve">
+    <value>Use another service to log in. de</value>
+  </data>
+  <data name="ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN" xml:space="preserve">
+    <value>Use a local account to log in. de</value>
+  </data>
   <data name="applicationAccess" xml:space="preserve">
     <value>Application Access de</value>
   </data>
@@ -153,13 +165,13 @@
   <data name="createNewAccount" xml:space="preserve">
     <value>Neues Konto erstellen</value>
   </data>
-  <data name="email" xml:space="preserve">
+  <data name="EMAIL" xml:space="preserve">
     <value>E-Mail</value>
   </data>
   <data name="emailInvalid" xml:space="preserve">
     <value>Email ungultig.</value>
   </data>
-  <data name="emailRequired" xml:space="preserve">
+  <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>Email-Adresse erforderlich</value>
   </data>
   <data name="externalProviderAssociate" xml:space="preserve">
@@ -172,7 +184,7 @@
     <value>Please enter an email address for this site below and click the Register button to finish
  logging in. de</value>
   </data>
-  <data name="forgotYourPassword" xml:space="preserve">
+  <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
     <value>Haben Sie Ihr Passwort vergessen</value>
   </data>
   <data name="home" xml:space="preserve">
@@ -187,26 +199,23 @@
   <data name="language" xml:space="preserve">
     <value>Sprache</value>
   </data>
-  <data name="login" xml:space="preserve">
-    <value>Einloggen</value>
-  </data>
   <data name="logout" xml:space="preserve">
     <value>Logout</value>
   </data>
   <data name="logoutClickToReturn" xml:space="preserve">
     <value>Click  the link to return to the application: de</value>
   </data>
-  <data name="password" xml:space="preserve">
+  <data name="PASSWORD" xml:space="preserve">
     <value>Passwort</value>
   </data>
   <data name="passwordHasBeenReset" xml:space="preserve">
     <value>Your password has been reset. Please click here to log in:  de</value>
   </data>
-  <data name="passwordRequired" xml:space="preserve">
-    <value>Passwort erforderlich</value>
-  </data>
   <data name="passwordStringLength" xml:space="preserve">
     <value>Das Passwort muss mindestens 8 und darf höchstens 100 Zeichen lang sein.</value>
+  </data>
+  <data name="PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Passwort erforderlich</value>
   </data>
   <data name="personalInformation" xml:space="preserve">
     <value>Personal Information de</value>
@@ -220,9 +229,6 @@
   <data name="register" xml:space="preserve">
     <value>Registrieren</value>
   </data>
-  <data name="registerAsNewUser" xml:space="preserve">
-    <value>Als neuer Benutzer/in registrieren?</value>
-  </data>
   <data name="registerExistingUser" xml:space="preserve">
     <value>Registrieren</value>
   </data>
@@ -232,14 +238,17 @@
   <data name="registerUserSucceeded" xml:space="preserve">
     <value>Registrierung der Benutzerin/des Benutzers erfolgreich</value>
   </data>
-  <data name="rememberMe" xml:space="preserve">
-    <value>Login merken</value>
+  <data name="REGISTER_AS_NEW_USER" xml:space="preserve">
+    <value>Als neuer Benutzer/in registrieren</value>
   </data>
   <data name="rememberMyDecision" xml:space="preserve">
     <value>Remember My Decision de</value>
   </data>
   <data name="rememberMyLogin" xml:space="preserve">
     <value>Logindaten merken</value>
+  </data>
+  <data name="REMEMBER_ME" xml:space="preserve">
+    <value>Login merken</value>
   </data>
   <data name="reset" xml:space="preserve">
     <value>Reset de</value>

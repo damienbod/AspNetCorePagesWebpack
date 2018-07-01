@@ -6,8 +6,10 @@ using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using AspNetCorePagesIdentity.Resources;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Localization;
@@ -64,6 +66,12 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
 
         public void OnGet(string returnUrl = null)
         {
+            // System.Globalization.CultureInfo.CurrentCulture
+            Response.Cookies.Append(
+               CookieRequestCultureProvider.DefaultCookieName,
+               CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(System.Globalization.CultureInfo.CurrentCulture)),
+               new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
+           );
             ReturnUrl = returnUrl;
         }
 

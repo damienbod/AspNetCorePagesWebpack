@@ -57,7 +57,8 @@ namespace AspNetCorePagesIdentity
                     options.DefaultRequestCulture = new RequestCulture(culture: "de-CH", uiCulture: "de-CH");
                     options.SupportedCultures = supportedCultures;
                     options.SupportedUICultures = supportedCultures;
-                    options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+                   // options.RequestCultureProviders.Insert(0, new QueryStringRequestCultureProvider());
+                    options.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider());
                 });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
@@ -95,7 +96,12 @@ namespace AspNetCorePagesIdentity
 
             app.UseAuthentication();
 
-            app.UseMvc();
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
         }
     }
 }

@@ -162,10 +162,10 @@
   <data name="registerExistingUser" xml:space="preserve">
     <value>Register</value>
   </data>
-  <data name="reset" xml:space="preserve">
+  <data name="RESET" xml:space="preserve">
     <value>Reset</value>
   </data>
-  <data name="resetPassword" xml:space="preserve">
+  <data name="RESET_PASSWORD" xml:space="preserve">
     <value>Reset Password</value>
   </data>
   <data name="resetPasswordConfirmation" xml:space="preserve">
@@ -256,6 +256,12 @@
   <data name="home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="ACCESS_DENIED" xml:space="preserve">
+    <value>Access denied</value>
+  </data>
+  <data name="ACCESS_DENIED_TEXT" xml:space="preserve">
+    <value>You do not have access to this resource.</value>
+  </data>
   <data name="ACCOUNT_NO_EXTERNAL_LOGINS" xml:space="preserve">
     <value>There are no external authentication services configured. See this article https://go.microsoft.com/fwlink/?LinkID=532715 for details on setting up this ASP.NET application to support logging in via external services.</value>
   </data>
@@ -277,6 +283,9 @@
   <data name="CONFIRM_YOUR_EMAIL_TEXT" xml:space="preserve">
     <value>Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;.</value>
   </data>
+  <data name="FORGOT_YOUR_PASSWORD_ENTER_EMAIL" xml:space="preserve">
+    <value>Enter your email.</value>
+  </data>
   <data name="INVALID_LOGIN_ATTEMPT" xml:space="preserve">
     <value>Invalid login attempt.</value>
   </data>
@@ -285,5 +294,11 @@
   </data>
   <data name="LOCKED_OUT_TEXT" xml:space="preserve">
     <value>This account has been locked out, please try again later.</value>
+  </data>
+  <data name="RESET_PASSWORD_EMAIL_TEXT" xml:space="preserve">
+    <value>Please reset your password by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;.</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Submit</value>
   </data>
 </root>

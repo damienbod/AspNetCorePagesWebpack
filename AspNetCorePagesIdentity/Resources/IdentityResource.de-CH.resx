@@ -126,6 +126,12 @@
   <data name="accessCodeRequired" xml:space="preserve">
     <value>accessCode erforderlich</value>
   </data>
+  <data name="ACCESS_DENIED" xml:space="preserve">
+    <value>Zugriff abgelehnt</value>
+  </data>
+  <data name="ACCESS_DENIED_TEXT" xml:space="preserve">
+    <value>Sie haben keinen Zugriff auf diese Ressource.</value>
+  </data>
   <data name="ACCOUNT_LOGIN" xml:space="preserve">
     <value>Einloggen</value>
   </data>
@@ -199,6 +205,9 @@
   <data name="FORGOT_YOUR_PASSWORD" xml:space="preserve">
     <value>Haben Sie Ihr Passwort vergessen</value>
   </data>
+  <data name="FORGOT_YOUR_PASSWORD_ENTER_EMAIL" xml:space="preserve">
+    <value>Geben sie ihre E-Mail Adresse ein.</value>
+  </data>
   <data name="home" xml:space="preserve">
     <value>Startseite</value>
   </data>
@@ -271,17 +280,23 @@
   <data name="REMEMBER_ME" xml:space="preserve">
     <value>Login merken</value>
   </data>
-  <data name="reset" xml:space="preserve">
-    <value>Reset de</value>
-  </data>
-  <data name="resetPassword" xml:space="preserve">
-    <value>Reset Password de</value>
+  <data name="RESET" xml:space="preserve">
+    <value>Zurücksetzen</value>
   </data>
   <data name="resetPasswordConfirmation" xml:space="preserve">
     <value>Reset password confirmation de</value>
   </data>
   <data name="resetYourPassword" xml:space="preserve">
     <value>Reset your password de</value>
+  </data>
+  <data name="RESET_PASSWORD" xml:space="preserve">
+    <value>Zurücksetzen Passwort</value>
+  </data>
+  <data name="RESET_PASSWORD_EMAIL_TEXT" xml:space="preserve">
+    <value>Bitte setzen Sie Ihr Passwort zurück, indem Sie hier &lt;a href='{0}'&gt;klicken&lt;/a&gt;.</value>
+  </data>
+  <data name="SUBMIT" xml:space="preserve">
+    <value>Einreichen</value>
   </data>
   <data name="uncheckPermissions" xml:space="preserve">
     <value>Uncheck the permissions you do not wish to grant. de</value>

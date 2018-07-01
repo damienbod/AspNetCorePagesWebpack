@@ -235,8 +235,8 @@
   <data name="LOCKED_OUT_TEXT" xml:space="preserve">
     <value>Dieser Account wurde gesperrt. Bitte versuchen Sie es später erneut.</value>
   </data>
-  <data name="logout" xml:space="preserve">
-    <value>Logout</value>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>Ausloggen</value>
   </data>
   <data name="logoutClickToReturn" xml:space="preserve">
     <value>Click  the link to return to the application: de</value>
@@ -324,5 +324,8 @@
   </data>
   <data name="EXTERNAL_PROVIDER_ERROR_INFO" xml:space="preserve">
     <value>Fehler beim Laden der externen Anmeldeinformationen.</value>
+  </data>
+  <data name="LOGOUT_TEXT" xml:space="preserve">
+    <value>Sie haben sich erfolgreich von der Anwendung abgemeldet.</value>
   </data>
 </root>

@@ -208,7 +208,7 @@
   <data name="isRequestingYourPermission" xml:space="preserve">
     <value>is requesting your permission</value>
   </data>
-  <data name="logout" xml:space="preserve">
+  <data name="LOGOUT" xml:space="preserve">
     <value>Logout</value>
   </data>
   <data name="logoutClickToReturn" xml:space="preserve">
@@ -321,5 +321,8 @@
   </data>
   <data name="EXTERNAL_PROVIDER_ERROR_INFO" xml:space="preserve">
     <value>Error loading external login information.</value>
+  </data>
+  <data name="LOGOUT_TEXT" xml:space="preserve">
+    <value>You have successfully logged out of the application.</value>
   </data>
 </root>

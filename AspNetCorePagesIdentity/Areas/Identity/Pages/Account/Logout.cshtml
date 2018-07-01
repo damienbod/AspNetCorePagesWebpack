@@ -1,10 +1,11 @@
 ﻿@page
 @model LogoutModel
 @{
-    ViewData["Title"] = "Log out";
+    ViewData["Title"] = @IdentityLocalizer.GetLocalizedHtmlString("LOGOUT");
 }
+@inject IdentityLocalizationService IdentityLocalizer
 
 <header>
     <h1>@ViewData["Title"]</h1>
-    <p>You have successfully logged out of the application.</p>
+    <p>@IdentityLocalizer.GetLocalizedHtmlString("LOGOUT_TEXT")</p>
 </header>

@@ -307,4 +307,7 @@
   <data name="SUBMIT" xml:space="preserve">
     <value>Submit</value>
   </data>
+  <data name="EXTERNAL_LOGIN_ASSOCIATE_ACCOUNT" xml:space="preserve">
+    <value>Associate your {0} account</value>
+  </data>
 </root>

@@ -310,4 +310,7 @@
   <data name="youAreNowLoggedOut" xml:space="preserve">
     <value>You are now logged out de</value>
   </data>
+  <data name="EXTERNAL_LOGIN_ASSOCIATE_ACCOUNT" xml:space="preserve">
+    <value>Associate your {0} account</value>
+  </data>
 </root>

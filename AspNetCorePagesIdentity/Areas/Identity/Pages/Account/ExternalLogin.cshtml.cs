@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using AspNetCorePagesIdentity.Resources;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
@@ -18,15 +21,21 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<ExternalLoginModel> _logger;
+        private readonly IStringLocalizer _identityLocalizer;
 
         public ExternalLoginModel(
             SignInManager<IdentityUser> signInManager,
             UserManager<IdentityUser> userManager,
-            ILogger<ExternalLoginModel> logger)
+            ILogger<ExternalLoginModel> logger,
+            IStringLocalizerFactory factory)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _logger = logger;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         [BindProperty]

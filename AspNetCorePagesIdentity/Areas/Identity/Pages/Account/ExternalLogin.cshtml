@@ -10,9 +10,7 @@
 <hr />
 
 <p class="text-info">
-    You've successfully authenticated with <strong>@Model.LoginProvider</strong>.
-    Please enter an email address for this site below and click the Register button to finish
-    logging in.
+    @IdentityLocalizer.GetLocalizedHtmlString("EXTERNAL_LOGIN_TEXT", @Model.LoginProvider)
 </p>
 
 <div class="row">

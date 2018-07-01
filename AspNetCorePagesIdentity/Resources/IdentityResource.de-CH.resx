@@ -316,4 +316,10 @@
   <data name="EXTERNAL_LOGIN_TEXT" xml:space="preserve">
     <value>Sie haben sich erfolgreich mit {0} authentifiziert. Bitte geben Sie unten eine E-Mail-Adresse für diese Seite ein und klicken Sie auf die Registrierenknopf, um die Anmeldung abzuschließen.</value>
   </data>
+  <data name="EXTERNAL_PROVIDER_ERROR" xml:space="preserve">
+    <value>Fehler von externem Anbieter: {0}</value>
+  </data>
+  <data name="EXTERNAL_PROVIDER_ERROR_INFO" xml:space="preserve">
+    <value>Fehler beim Laden der externen Anmeldeinformationen.</value>
+  </data>
 </root>

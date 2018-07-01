@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -73,13 +70,13 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
             returnUrl = returnUrl ?? Url.Content("~/");
             if (remoteError != null)
             {
-                ErrorMessage = $"Error from external provider: {remoteError}";
+                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR", remoteError];
                 return RedirectToPage("./Login", new {ReturnUrl = returnUrl });
             }
             var info = await _signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = "Error loading external login information.";
+                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR_INFO", remoteError];
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 

@@ -78,8 +78,14 @@
 
             <div title="@Localizer["Request culture provider:"] @requestCulture?.Provider?.GetType().Name">
                 <form id="selectLanguage" asp-controller="SetLanguage" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path" method="post" class="form-horizontal" role="form">
-                    @SharedLocalizer.GetLocalizedHtmlString("LANGUAGE") <select name="culture" asp-for="@requestCulture.RequestCulture.UICulture.Name" asp-items="cultureItems"></select>
-                    <button type="submit" class="btn btn-default btn-xs"> @SharedLocalizer.GetLocalizedHtmlString("SAVE")</button>
+                    <label class="form-label">@SharedLocalizer.GetLocalizedHtmlString("LANGUAGE")</label>
+                    <div class="input-group">
+
+                        <select class="custom-select" name="culture" asp-for="@requestCulture.RequestCulture.UICulture.Name" asp-items="cultureItems"></select>
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-outline-secondary" type="button">@SharedLocalizer.GetLocalizedHtmlString("SAVE")</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </footer>

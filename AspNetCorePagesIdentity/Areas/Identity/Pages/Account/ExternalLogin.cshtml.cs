@@ -76,7 +76,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
             var info = await _signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR_INFO", remoteError];
+                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR_INFO"];
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
@@ -114,7 +114,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
             var info = await _signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = "Error loading external login information during confirmation.";
+                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR_CONFIRMATION"];
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 

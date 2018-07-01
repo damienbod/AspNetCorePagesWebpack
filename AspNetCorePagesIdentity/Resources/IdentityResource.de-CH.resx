@@ -319,6 +319,9 @@
   <data name="EXTERNAL_PROVIDER_ERROR" xml:space="preserve">
     <value>Fehler von externem Anbieter: {0}</value>
   </data>
+  <data name="EXTERNAL_PROVIDER_ERROR_CONFIRMATION" xml:space="preserve">
+    <value>Fehler beim Laden der externen Anmeldeinformationen während der Bestätigung.</value>
+  </data>
   <data name="EXTERNAL_PROVIDER_ERROR_INFO" xml:space="preserve">
     <value>Fehler beim Laden der externen Anmeldeinformationen.</value>
   </data>

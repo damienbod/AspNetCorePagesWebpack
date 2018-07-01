@@ -316,6 +316,9 @@
   <data name="EXTERNAL_PROVIDER_ERROR" xml:space="preserve">
     <value>Error from external provider: {0}</value>
   </data>
+  <data name="EXTERNAL_PROVIDER_ERROR_CONFIRMATION" xml:space="preserve">
+    <value>Error loading external login information during confirmation.</value>
+  </data>
   <data name="EXTERNAL_PROVIDER_ERROR_INFO" xml:space="preserve">
     <value>Error loading external login information.</value>
   </data>

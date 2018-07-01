@@ -129,7 +129,7 @@
   <data name="confirmPasswordNotMatching" xml:space="preserve">
     <value>The password and confirmation password do not match.</value>
   </data>
-  <data name="createNewAccount" xml:space="preserve">
+  <data name="CREATE_A_NEW_ACCOUNT" xml:space="preserve">
     <value>Create a new account.</value>
   </data>
   <data name="EMAIL" xml:space="preserve">

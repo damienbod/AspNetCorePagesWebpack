@@ -153,6 +153,9 @@
   <data name="CONFIRM_YOUR_EMAIL" xml:space="preserve">
     <value>Bestätigen Sie Ihre E-Mail Adresse</value>
   </data>
+  <data name="CONFIRM_YOUR_EMAIL_TEXT" xml:space="preserve">
+    <value>Please confirm your account by &lt;a href='{0}'&gt;clicking here&lt;/a&gt;. de</value>
+  </data>
   <data name="consentNoDoNotAllow" xml:space="preserve">
     <value>No, Do Not Allow de</value>
   </data>

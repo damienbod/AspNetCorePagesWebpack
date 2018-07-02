@@ -282,4 +282,10 @@
   <data name="RESET_PASSWORD_CONFIRMATION" xml:space="preserve">
     <value>Reset password confirmation de</value>
   </data>
+  <data name="RESET_PASSWORD_CONFIRMATION_CLICK_HERE" xml:space="preserve">
+    <value>click here to log in (de)</value>
+  </data>
+  <data name="RESET_PASSWORD_CONFIRMATION_TEXT1" xml:space="preserve">
+    <value>Your password has been reset. Please (de)</value>
+  </data>
 </root>

@@ -171,7 +171,7 @@
   <data name="resetPasswordConfirmation" xml:space="preserve">
     <value>Reset password confirmation </value>
   </data>
-  <data name="resetYourPassword" xml:space="preserve">
+  <data name="RESET_YOUR_PASSWORD" xml:space="preserve">
     <value>Reset your password</value>
   </data>
   <data name="accessCode" xml:space="preserve">

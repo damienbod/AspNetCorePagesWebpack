@@ -292,7 +292,7 @@
   <data name="resetPasswordConfirmation" xml:space="preserve">
     <value>Reset password confirmation de</value>
   </data>
-  <data name="resetYourPassword" xml:space="preserve">
+  <data name="RESET_YOUR_PASSWORD" xml:space="preserve">
     <value>Reset your password de</value>
   </data>
   <data name="RESET_PASSWORD" xml:space="preserve">

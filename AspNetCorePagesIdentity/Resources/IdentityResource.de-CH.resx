@@ -159,8 +159,8 @@
   <data name="EMAIL" xml:space="preserve">
     <value>E-Mail</value>
   </data>
-  <data name="emailInvalid" xml:space="preserve">
-    <value>Email ungultig.</value>
+  <data name="EMAIL_INVALID" xml:space="preserve">
+    <value>Email-Adresse ungultig.</value>
   </data>
   <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>Email-Adresse erforderlich</value>

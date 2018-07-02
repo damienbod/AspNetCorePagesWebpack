@@ -39,8 +39,8 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "EMAIL_REQUIRED")]
+            [EmailAddress(ErrorMessage = "EMAIL_INVALID")]
             public string Email { get; set; }
 
             [Phone]

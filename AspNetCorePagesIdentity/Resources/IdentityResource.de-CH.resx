@@ -325,6 +325,27 @@
   <data name="EXTERNAL_PROVIDER_ERROR_INFO" xml:space="preserve">
     <value>Fehler beim Laden der externen Anmeldeinformationen.</value>
   </data>
+  <data name="ACCOUNT_LOGIN_2FA" xml:space="preserve">
+    <value>Two-factor authentication de</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_2FA_NO_AUTHENTICATOR_DEVICE" xml:space="preserve">
+    <value>Don't have access to your authenticator device? You can (de)</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_2FA_RECOVERY_CODE_TEXT" xml:space="preserve">
+    <value>log in with a recovery code de</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_2FA_REMEMBER_MC" xml:space="preserve">
+    <value>Remember this machine de</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_2FA_TEXT" xml:space="preserve">
+    <value>Your login is protected with an authenticator app. Enter your authenticator code below. de</value>
+  </data>
+  <data name="ACCOUNT_LOGIN_AUTHENTICATOR_CODE" xml:space="preserve">
+    <value>Authenticator code de</value>
+  </data>
+  <data name="INVALID_AUTHENTICATOR_CODE" xml:space="preserve">
+    <value>Invalid authenticator code. de</value>
+  </data>
   <data name="LOGOUT_TEXT" xml:space="preserve">
     <value>Sie haben sich erfolgreich von der Anwendung abgemeldet.</value>
   </data>

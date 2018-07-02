@@ -288,4 +288,7 @@
   <data name="RESET_PASSWORD_CONFIRMATION_TEXT1" xml:space="preserve">
     <value>Your password has been reset. Please (de)</value>
   </data>
+  <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
+    <value>The {0} must be at least {2} and at max {1} characters long. (de)</value>
+  </data>
 </root>

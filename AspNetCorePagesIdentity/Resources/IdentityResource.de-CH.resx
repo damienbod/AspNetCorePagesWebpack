@@ -192,12 +192,6 @@
   <data name="PASSWORD" xml:space="preserve">
     <value>Passwort</value>
   </data>
-  <data name="passwordHasBeenReset" xml:space="preserve">
-    <value>Your password has been reset. Please click here to log in:  de</value>
-  </data>
-  <data name="passwordStringLength" xml:space="preserve">
-    <value>Das Passwort muss mindestens 8 und darf höchstens 100 Zeichen lang sein.</value>
-  </data>
   <data name="PASSWORD_REQUIRED" xml:space="preserve">
     <value>Passwort erforderlich</value>
   </data>
@@ -289,6 +283,6 @@
     <value>Your password has been reset. Please (de)</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
-    <value>The {0} must be at least {2} and at max {1} characters long. (de)</value>
+    <value>Das  {0} muss mindestens  {2} und darf höchstens  {1} Zeichen lang sein.</value>
   </data>
 </root>

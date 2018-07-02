@@ -141,14 +141,8 @@
   <data name="EMAIL_REQUIRED" xml:space="preserve">
     <value>Email required</value>
   </data>
-  <data name="passwordStringLength" xml:space="preserve">
-    <value>The password must be at least 8 and at max 100 characters long.</value>
-  </data>
   <data name="PASSWORD_REQUIRED" xml:space="preserve">
     <value>Password required</value>
-  </data>
-  <data name="passwordHasBeenReset" xml:space="preserve">
-    <value>Your password has been reset. Please click here to log in:  </value>
   </data>
   <data name="RESET" xml:space="preserve">
     <value>Reset</value>

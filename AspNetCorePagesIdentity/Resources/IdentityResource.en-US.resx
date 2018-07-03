@@ -288,6 +288,21 @@
   <data name="2FA" xml:space="preserve">
     <value>Two-factor authentication</value>
   </data>
+  <data name="CHANGE_PASSWORD" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="CHANGE_PASSWORD_STATUS" xml:space="preserve">
+    <value>Your password has been changed.</value>
+  </data>
+  <data name="CHANGE_PASSWORD_USER_NOTFOUND" xml:space="preserve">
+    <value>Unable to load user with ID '{0}'.</value>
+  </data>
+  <data name="CURRENT_PASSWORD" xml:space="preserve">
+    <value>Current password</value>
+  </data>
+  <data name="CURRENT_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>Current password required</value>
+  </data>
   <data name="EXTERNAL_LOGINS" xml:space="preserve">
     <value>External logins</value>
   </data>
@@ -297,6 +312,12 @@
   <data name="MANAGE_YOUR_ACCOUNT" xml:space="preserve">
     <value>Manage your account</value>
   </data>
+  <data name="NEW_PASSWORD" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="NEW_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>New password required</value>
+  </data>
   <data name="PERSONAL_DATA" xml:space="preserve">
     <value>Personal data</value>
   </data>
@@ -305,6 +326,9 @@
   </data>
   <data name="TWOFACTORCODE_REQUIRED" xml:space="preserve">
     <value>Two-factor code is required</value>
+  </data>
+  <data name="UPDATE_PASSWORD" xml:space="preserve">
+    <value>Update password</value>
   </data>
   <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
     <value>Verification code is required</value>

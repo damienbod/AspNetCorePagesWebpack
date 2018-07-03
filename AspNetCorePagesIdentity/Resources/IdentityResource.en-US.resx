@@ -408,6 +408,33 @@
   <data name="VERIFY" xml:space="preserve">
     <value>Verify</value>
   </data>
+  <data name="2FA_AUTHENTICATION_ADD_AUTHENTICATOR_APP" xml:space="preserve">
+    <value>Add authenticator app</value>
+  </data>
+  <data name="2FA_AUTHENTICATION_ADD_RESET_APP" xml:space="preserve">
+    <value>Reset authenticator app</value>
+  </data>
+  <data name="2FA_AUTHENTICATION_ADD_SETUP_APP" xml:space="preserve">
+    <value>Setup authenticator app</value>
+  </data>
+  <data name="2FA_AUTHENTICATION_TITLE" xml:space="preserve">
+    <value>Two-factor authentication (2FA)</value>
+  </data>
+  <data name="2FA_NO_CODES_LEFT" xml:space="preserve">
+    <value>You have no recovery codes left.</value>
+  </data>
+  <data name="2FA_N_CODES_LEFT" xml:space="preserve">
+    <value>You have {0} recovery codes left.</value>
+  </data>
+  <data name="2FA_ONE_CODES_LEFT" xml:space="preserve">
+    <value>You have 1 recovery code left.</value>
+  </data>
+  <data name="2FA_STATUS_BROWSER_FORGET" xml:space="preserve">
+    <value>The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code.</value>
+  </data>
+  <data name="AUTHENTICATOR_APP" xml:space="preserve">
+    <value>Authenticator app</value>
+  </data>
   <data name="DELETE" xml:space="preserve">
     <value>Delete</value>
   </data>
@@ -420,6 +447,9 @@
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
     <value>Manage your external logins</value>
   </data>
+  <data name="FORGET_THIS_BROWSER" xml:space="preserve">
+    <value>Forget this browser</value>
+  </data>
   <data name="PERSONAL_DATA_DELETEINFO" xml:space="preserve">
     <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
   </data>
@@ -431,6 +461,9 @@
   </data>
   <data name="REMOVE" xml:space="preserve">
     <value>Remove</value>
+  </data>
+  <data name="RESET_RECOVERY_CODES" xml:space="preserve">
+    <value>Reset recovery codes</value>
   </data>
   <data name="SAVE" xml:space="preserve">
     <value>Save</value>

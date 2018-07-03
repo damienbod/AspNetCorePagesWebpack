@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Reflection;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using AspNetCorePagesIdentity.Resources;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Localization;
 
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
 {
@@ -16,15 +19,21 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly IEmailSender _emailSender;
+        private readonly IStringLocalizer _identityLocalizer;
 
         public IndexModel(
             UserManager<IdentityUser> userManager,
             SignInManager<IdentityUser> signInManager,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _emailSender = emailSender;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         public string Username { get; set; }
@@ -53,7 +62,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             var userName = await _userManager.GetUserNameAsync(user);
@@ -83,7 +92,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             var email = await _userManager.GetEmailAsync(user);
@@ -109,7 +118,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             }
 
             await _signInManager.RefreshSignInAsync(user);
-            StatusMessage = "Your profile has been updated";
+            StatusMessage = _identityLocalizer["STATUS_PROFILE_UPDATED", _userManager.GetUserId(User)];
             return RedirectToPage();
         }
 
@@ -123,7 +132,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
 
@@ -137,10 +146,10 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
                 protocol: Request.Scheme);
             await _emailSender.SendEmailAsync(
                 email,
-                "Confirm your email",
-                $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                _identityLocalizer["CONFIRM_YOUR_EMAIL"],
+                _identityLocalizer["CONFIRM_YOUR_EMAIL_TEXT", HtmlEncoder.Default.Encode(callbackUrl)]);
 
-            StatusMessage = "Verification email sent. Please check your email.";
+            StatusMessage = _identityLocalizer["STATUS_UPDATE_PROFILE_EMAIL_SEND"];
             return RedirectToPage();
         }
     }

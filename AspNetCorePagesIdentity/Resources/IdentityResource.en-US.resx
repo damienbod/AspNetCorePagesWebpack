@@ -414,13 +414,31 @@
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
     <value>Manage your external logins</value>
   </data>
+  <data name="PHONE_NUMBER" xml:space="preserve">
+    <value>Phone number</value>
+  </data>
   <data name="REMOVE" xml:space="preserve">
     <value>Remove</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SEND_VERIFICATION_EMAIL" xml:space="preserve">
+    <value>Send verification email</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
     <value>The external login was added.</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_REMOVED" xml:space="preserve">
     <value>The external login was removed.</value>
+  </data>
+  <data name="STATUS_PROFILE_UPDATED" xml:space="preserve">
+    <value>Your profile has been updated</value>
+  </data>
+  <data name="STATUS_UPDATE_PROFILE_EMAIL_SEND" xml:space="preserve">
+    <value>Verification email sent. Please check your email.</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>Username</value>
   </data>
 </root>

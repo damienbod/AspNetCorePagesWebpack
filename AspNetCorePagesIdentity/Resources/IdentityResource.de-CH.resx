@@ -411,14 +411,32 @@
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
     <value>Verwalten Sie Ihre externen Logins</value>
   </data>
+  <data name="PHONE_NUMBER" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
   <data name="REMOVE" xml:space="preserve">
     <value>Löschen</value>
+  </data>
+  <data name="SAVE" xml:space="preserve">
+    <value>Speichern</value>
+  </data>
+  <data name="SEND_VERIFICATION_EMAIL" xml:space="preserve">
+    <value>Senden Sie E-Mail-Verifizierung</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
     <value>Die externe Anmeldung wurde hinzugefügt.</value>
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_REMOVED" xml:space="preserve">
     <value>Die externe Anmeldung wurde entfernt.</value>
+  </data>
+  <data name="STATUS_PROFILE_UPDATED" xml:space="preserve">
+    <value>Ihr Profil wurde aktualisiert</value>
+  </data>
+  <data name="STATUS_UPDATE_PROFILE_EMAIL_SEND" xml:space="preserve">
+    <value>Bestätigungs-E-Mail gesendet Bitte überprüfen Sie Ihre E-Mail.</value>
+  </data>
+  <data name="USERNAME" xml:space="preserve">
+    <value>Benutzername</value>
   </data>
   <data name="VERIFY" xml:space="preserve">
     <value>Überprüfen</value>

@@ -285,6 +285,24 @@
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
     <value>The {0} must be at least {2} and at max {1} characters long.</value>
   </data>
+  <data name="2FA" xml:space="preserve">
+    <value>Two-factor authentication</value>
+  </data>
+  <data name="EXTERNAL_LOGINS" xml:space="preserve">
+    <value>External logins</value>
+  </data>
+  <data name="MANAGE_CAHNGE_ACCOUNT_SETTINGS" xml:space="preserve">
+    <value>Change your account settings</value>
+  </data>
+  <data name="MANAGE_YOUR_ACCOUNT" xml:space="preserve">
+    <value>Manage your account</value>
+  </data>
+  <data name="PERSONAL_DATA" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="PROFILE" xml:space="preserve">
+    <value>Profile</value>
+  </data>
   <data name="TWOFACTORCODE_REQUIRED" xml:space="preserve">
     <value>Two-factor code is required</value>
   </data>

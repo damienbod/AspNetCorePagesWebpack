@@ -405,11 +405,23 @@
   <data name="VERIFICATION_CODE" xml:space="preserve">
     <value>Bestätigungscode</value>
   </data>
+  <data name="DELETE" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="DOWNLOAD" xml:space="preserve">
+    <value>Herunterladen</value>
+  </data>
   <data name="EXTERNAL_LOGINS_REGISTERED_LOGIN" xml:space="preserve">
     <value>Registrierte Anmeldungen</value>
   </data>
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
     <value>Verwalten Sie Ihre externen Logins</value>
+  </data>
+  <data name="PERSONAL_DATA_DELETEINFO" xml:space="preserve">
+    <value>Durch das Löschen dieser Daten wird Ihr Konto dauerhaft gelöscht. Dies kann nicht wiederhergestellt werden.</value>
+  </data>
+  <data name="PERSONAL_DATA_INFO" xml:space="preserve">
+    <value>Ihr Konto enthält persönliche Daten, die Sie uns gegeben haben. Auf dieser Seite können Sie diese Daten herunterladen oder löschen.</value>
   </data>
   <data name="PHONE_NUMBER" xml:space="preserve">
     <value>Telefonnummer</value>

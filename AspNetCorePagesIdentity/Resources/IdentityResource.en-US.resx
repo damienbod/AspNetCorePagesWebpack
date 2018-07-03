@@ -408,11 +408,23 @@
   <data name="VERIFY" xml:space="preserve">
     <value>Verify</value>
   </data>
+  <data name="DELETE" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DOWNLOAD" xml:space="preserve">
+    <value>Download</value>
+  </data>
   <data name="EXTERNAL_LOGINS_REGISTERED_LOGIN" xml:space="preserve">
     <value>Registered Logins</value>
   </data>
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
     <value>Manage your external logins</value>
+  </data>
+  <data name="PERSONAL_DATA_DELETEINFO" xml:space="preserve">
+    <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
+  </data>
+  <data name="PERSONAL_DATA_INFO" xml:space="preserve">
+    <value>Your account contains personal data that you have given us. This page allows you to download or delete that data.</value>
   </data>
   <data name="PHONE_NUMBER" xml:space="preserve">
     <value>Phone number</value>

@@ -316,7 +316,7 @@
     <value>Neues Passwort erforderlich</value>
   </data>
   <data name="PERSONAL_DATA" xml:space="preserve">
-    <value>persönliche Daten</value>
+    <value>Persönliche Daten</value>
   </data>
   <data name="PROFILE" xml:space="preserve">
     <value>Profil</value>
@@ -329,6 +329,36 @@
   </data>
   <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
     <value>Bestätigungscode wird benötigt</value>
+  </data>
+  <data name="AND" xml:space="preserve">
+    <value>und</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP" xml:space="preserve">
+    <value>Konfigurieren Sie die Authentifikator-App</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_DOWNLOAD_TEXT" xml:space="preserve">
+    <value>Laden Sie eine Zwei-Faktor-Authentifizierungsanwendung wie Microsoft Authenticator für</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_GOOGLE_TEXT" xml:space="preserve">
+    <value>Google Authenticator für</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN1" xml:space="preserve">
+    <value>Scannen Sie den QR-Code oder geben Sie diesen Schlüssel </value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN2" xml:space="preserve">
+    <value>in Ihre Zwei-Faktor-Authenticator-App ein. Leerzeichen und Gehäuse spielen keine Rolle.</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT" xml:space="preserve">
+    <value>Zur Aktivierung der QR-Code-Generierung lesen Sie bitte unsere </value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT_DETAILS" xml:space="preserve">
+    <value>Nachdem Sie den QR-Code gescannt oder den oben genannten Schlüssel eingegeben haben, erhalten Sie von der Zwei-Faktor-Authentifizierungs-App einen eindeutigen Code. Geben Sie den Code in das Bestätigungsfeld ein.</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT_LINK" xml:space="preserve">
+    <value>Dokumentation</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_STEPS" xml:space="preserve">
+    <value>Führen Sie die folgenden Schritte aus, um eine Authenticator-App zu verwenden:</value>
   </data>
   <data name="DELETE_PERSONAL_DATA" xml:space="preserve">
     <value>Löschen Sie persönliche Daten</value>
@@ -363,7 +393,19 @@
   <data name="INCORRECT_PASSWORD" xml:space="preserve">
     <value>Das Passwort ist nicht korrekt</value>
   </data>
+  <data name="INVALID_VERFICATION_CODE" xml:space="preserve">
+    <value>Der Bestätigungscode ist ungültig.</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>oder</value>
+  </data>
   <data name="USER_NOTFOUND" xml:space="preserve">
     <value>Benutzer konnte nicht mit ID  '{0}' geladen werden.</value>
+  </data>
+  <data name="VERIFICATION_CODE" xml:space="preserve">
+    <value>Bestätigungscode</value>
+  </data>
+  <data name="VERIFY" xml:space="preserve">
+    <value>Überprüfen</value>
   </data>
 </root>

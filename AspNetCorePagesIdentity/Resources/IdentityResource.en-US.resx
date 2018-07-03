@@ -330,6 +330,36 @@
   <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
     <value>Verification code is required</value>
   </data>
+  <data name="AND" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP" xml:space="preserve">
+    <value>Configure authenticator app</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_DOWNLOAD_TEXT" xml:space="preserve">
+    <value>Download a two-factor authenticator app like Microsoft Authenticator for</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_GOOGLE_TEXT" xml:space="preserve">
+    <value>Google Authenticator for</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN1" xml:space="preserve">
+    <value>Scan the QR Code or enter this key</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN2" xml:space="preserve">
+    <value>into your two factor authenticator app. Spaces and casing do not matter.</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT" xml:space="preserve">
+    <value>To enable QR code generation please read our</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT_DETAILS" xml:space="preserve">
+    <value>Once you have scanned the QR code or input the key above, your two factor authentication app will provide you with a unique code. Enter the code in the confirmation box below.</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_SCAN_ALERT_LINK" xml:space="preserve">
+    <value>documentation</value>
+  </data>
+  <data name="CONFIGURE_AUTHENTICATOR_APP_STEPS" xml:space="preserve">
+    <value>To use an authenticator app go through the following steps:</value>
+  </data>
   <data name="DELETE_PERSONAL_DATA" xml:space="preserve">
     <value>Delete Personal Data</value>
   </data>
@@ -363,7 +393,19 @@
   <data name="INCORRECT_PASSWORD" xml:space="preserve">
     <value>Password is not correct</value>
   </data>
+  <data name="INVALID_VERFICATION_CODE" xml:space="preserve">
+    <value>Verification code is invalid.</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>or</value>
+  </data>
   <data name="USER_NOTFOUND" xml:space="preserve">
     <value>Unable to load user with ID '{0}'.</value>
+  </data>
+  <data name="VERIFICATION_CODE" xml:space="preserve">
+    <value>Verification code</value>
+  </data>
+  <data name="VERIFY" xml:space="preserve">
+    <value>Verify</value>
   </data>
 </root>

@@ -10,6 +10,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Localization;
+using AspNetCorePagesIdentity.Resources;
+using System.Reflection;
 
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
 {
@@ -18,17 +21,23 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<EnableAuthenticatorModel> _logger;
         private readonly UrlEncoder _urlEncoder;
+        private readonly IStringLocalizer _identityLocalizer;
 
         private const string AuthenticatorUriFormat = "otpauth://totp/{0}:{1}?secret={2}&issuer={0}&digits=6";
 
         public EnableAuthenticatorModel(
             UserManager<IdentityUser> userManager,
             ILogger<EnableAuthenticatorModel> logger,
-            UrlEncoder urlEncoder)
+            UrlEncoder urlEncoder,
+            IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _logger = logger;
             _urlEncoder = urlEncoder;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         public string SharedKey { get; set; }
@@ -58,7 +67,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             await LoadSharedKeyAndQrCodeUriAsync(user);
@@ -71,7 +80,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             if (!ModelState.IsValid)
@@ -88,7 +97,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
 
             if (!is2faTokenValid)
             {
-                ModelState.AddModelError("Input.Code", "Verification code is invalid.");
+                ModelState.AddModelError("Input.Code", _identityLocalizer["INVALID_VERFICATION_CODE"]);
                 await LoadSharedKeyAndQrCodeUriAsync(user);
                 return Page();
             }

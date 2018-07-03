@@ -444,6 +444,24 @@
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
     <value>Verwalten Sie Ihre externen Logins</value>
   </data>
+  <data name="GENERATE_2FA_RECOVERY_CODES" xml:space="preserve">
+    <value>Generieren Sie Wiederherstellungscodes für 2-Faktor-Authentifizierung (2FA)</value>
+  </data>
+  <data name="GENERATE_2FA_RECOVERY_CODES_INFO_LOSE" xml:space="preserve">
+    <value>Wenn Sie Ihr Gerät verlieren und keine Wiederherstellungscodes haben, verlieren Sie den Zugriff auf Ihr Konto.</value>
+  </data>
+  <data name="GENERATE_2FA_RECOVERY_CODES_SAFE_PLACE" xml:space="preserve">
+    <value>Legen Sie diese Codes an einem sicheren Ort ab.</value>
+  </data>
+  <data name="GENERATE_2FA_RECOVERY_CODES_TEXT" xml:space="preserve">
+    <value>Durch die Erstellung neuer Wiederherstellungscodes werden die in Authenticator-Apps verwendeten Schlüssel nicht geändert. Wenn Sie den in einer Authenticator-App verwendeten Schlüssel ändern möchten, sollten Sie Ihre Authentifizierungsschlüssel zurücksetzen.</value>
+  </data>
+  <data name="GENERATE_2FA_RECOVERY_CODES_TEXT_LINK" xml:space="preserve">
+    <value>zurücksetzen.</value>
+  </data>
+  <data name="GENERATE_RECOVERY_CODES" xml:space="preserve">
+    <value>Generiere Wiederherstellungscodes</value>
+  </data>
   <data name="PERSONAL_DATA_DELETEINFO" xml:space="preserve">
     <value>Durch das Löschen dieser Daten wird Ihr Konto dauerhaft gelöscht. Dies kann nicht wiederhergestellt werden.</value>
   </data>
@@ -494,6 +512,9 @@
   </data>
   <data name="STATUS_EXTERNAL_LOGIN_REMOVED" xml:space="preserve">
     <value>Die externe Anmeldung wurde entfernt.</value>
+  </data>
+  <data name="STATUS_GENERATE_CODES" xml:space="preserve">
+    <value>Sie haben neue Wiederherstellungscodes generiert.</value>
   </data>
   <data name="STATUS_PROFILE_UPDATED" xml:space="preserve">
     <value>Ihr Profil wurde aktualisiert</value>

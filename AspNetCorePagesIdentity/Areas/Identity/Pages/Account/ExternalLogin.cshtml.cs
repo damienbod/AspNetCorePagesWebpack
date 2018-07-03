@@ -1,13 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using AspNetCorePagesIdentity.Resources;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
@@ -18,15 +18,21 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<ExternalLoginModel> _logger;
+        private readonly IStringLocalizer _identityLocalizer;
 
         public ExternalLoginModel(
             SignInManager<IdentityUser> signInManager,
             UserManager<IdentityUser> userManager,
-            ILogger<ExternalLoginModel> logger)
+            ILogger<ExternalLoginModel> logger,
+            IStringLocalizerFactory factory)
         {
             _signInManager = signInManager;
             _userManager = userManager;
             _logger = logger;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         [BindProperty]
@@ -41,8 +47,8 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "EMAIL_REQUIRED")]
+            [EmailAddress(ErrorMessage = "EMAIL_INVALID")]
             public string Email { get; set; }
         }
 
@@ -64,13 +70,13 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
             returnUrl = returnUrl ?? Url.Content("~/");
             if (remoteError != null)
             {
-                ErrorMessage = $"Error from external provider: {remoteError}";
+                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR", remoteError];
                 return RedirectToPage("./Login", new {ReturnUrl = returnUrl });
             }
             var info = await _signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = "Error loading external login information.";
+                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR_INFO"];
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 
@@ -108,7 +114,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
             var info = await _signInManager.GetExternalLoginInfoAsync();
             if (info == null)
             {
-                ErrorMessage = "Error loading external login information during confirmation.";
+                ErrorMessage = _identityLocalizer["EXTERNAL_PROVIDER_ERROR_CONFIRMATION"];
                 return RedirectToPage("./Login", new { ReturnUrl = returnUrl });
             }
 

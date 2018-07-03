@@ -1,24 +1,24 @@
 ﻿@page
 @model ResetAuthenticatorModel
 @{
-    ViewData["Title"] = "Reset authenticator key";
+    ViewData["Title"] = @IdentityLocalizer.GetLocalizedHtmlString("RESET_AUTHENTICATOR_KEY");
     ViewData["ActivePage"] = ManageNavPages.TwoFactorAuthentication;
 }
+@inject IdentityLocalizationService IdentityLocalizer
 
 @Html.Partial("_StatusMessage", Model.StatusMessage)
 <h4>@ViewData["Title"]</h4>
 <div class="alert alert-warning" role="alert">
     <p>
         <span class="glyphicon glyphicon-warning-sign"></span>
-        <strong>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</strong>
+        <strong>@IdentityLocalizer.GetLocalizedHtmlString("RESET_AUTHENTICATOR_INFO")</strong>
     </p>
     <p>
-        This process disables 2FA until you verify your authenticator app.
-        If you do not complete your authenticator app configuration you may lose access to your account.
+        @IdentityLocalizer.GetLocalizedHtmlString("RESET_AUTHENTICATOR_TEXT")
     </p>
 </div>
 <div>
     <form id="reset-authenticator-form" method="post" class="form-group">
-        <button id="reset-authenticator-button" class="btn btn-danger" type="submit">Reset authenticator key</button>
+        <button id="reset-authenticator-button" class="btn btn-danger" type="submit"> @IdentityLocalizer.GetLocalizedHtmlString("RESET_AUTHENTICATOR_KEY")</button>
     </form>
 </div>

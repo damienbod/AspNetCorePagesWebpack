@@ -1,25 +1,25 @@
 ﻿@page
 @model LoginModel
-
 @{
-    ViewData["Title"] = "Log in";
+    ViewData["Title"] = @IdentityLocalizer.GetLocalizedHtmlString("ACCOUNT_LOGIN");
 }
+@inject IdentityLocalizationService IdentityLocalizer
 
 <h2>@ViewData["Title"]</h2>
 <div class="row">
     <div class="col-md-4">
         <section>
             <form method="post">
-                <h4>Use a local account to log in.</h4>
+                <h4>@IdentityLocalizer.GetLocalizedHtmlString("ACCOUNT_USE_LOCAL_ACCOUNT_TO_LOG_IN")</h4>
                 <hr />
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="form-group">
-                    <label asp-for="Input.Email"></label>
+                    <label asp-for="Input.Email">@IdentityLocalizer.GetLocalizedHtmlString("EMAIL")</label>
                     <input asp-for="Input.Email" class="form-control" />
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="Input.Password"></label>
+                    <label asp-for="Input.Password">@IdentityLocalizer.GetLocalizedHtmlString("PASSWORD")</label>
                     <input asp-for="Input.Password" class="form-control" />
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
@@ -27,19 +27,19 @@
                     <div class="checkbox">
                         <label asp-for="Input.RememberMe">
                             <input asp-for="Input.RememberMe" />
-                            @Html.DisplayNameFor(m => m.Input.RememberMe)
+                            @IdentityLocalizer.GetLocalizedHtmlString("REMEMBER_ME")
                         </label>
                     </div>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Log in</button>
+                    <button type="submit" class="btn btn-primary">@IdentityLocalizer.GetLocalizedHtmlString("ACCOUNT_LOGIN")</button>
                 </div>
                 <div class="form-group">
                     <p>
-                        <a asp-page="./ForgotPassword">Forgot your password?</a>
+                        <a asp-page="./ForgotPassword">@IdentityLocalizer.GetLocalizedHtmlString("FORGOT_YOUR_PASSWORD")</a>
                     </p>
                     <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">@IdentityLocalizer.GetLocalizedHtmlString("REGISTER_AS_NEW_USER")</a>
                     </p>
                 </div>
             </form>
@@ -47,15 +47,14 @@
     </div>
     <div class="col-md-6 col-md-offset-2">
         <section>
-            <h4>Use another service to log in.</h4>
+            <h4>@IdentityLocalizer.GetLocalizedHtmlString("ACCOUNT_USE_ANOTHER_SERVICE_LOG_IN")</h4>
             <hr />
             @{
                 if ((Model.ExternalLogins?.Count ?? 0) == 0)
                 {
                     <div>
                         <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
+                            @IdentityLocalizer.GetLocalizedHtmlString("ACCOUNT_NO_EXTERNAL_LOGINS")
                         </p>
                     </div>
                 }

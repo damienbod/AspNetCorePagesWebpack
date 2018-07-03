@@ -1,16 +1,16 @@
 ﻿@page
 @model DeletePersonalDataModel
 @{
-    ViewData["Title"] = "Delete Personal Data";
+    ViewData["Title"] = @IdentityLocalizer.GetLocalizedHtmlString("DELETE_PERSONAL_DATA");
     ViewData["ActivePage"] = ManageNavPages.DeletePersonalData;
 }
-
+@inject IdentityLocalizationService IdentityLocalizer
 <h4>@ViewData["Title"]</h4>
 
 <div class="alert alert-warning" role="alert">
     <p>
         <span class="glyphicon glyphicon-warning-sign"></span>
-        <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
+        <strong>@IdentityLocalizer.GetLocalizedHtmlString("DELETE_PERSONAL_DATA_TEXT")</strong>
     </p>
 </div>
 
@@ -19,16 +19,16 @@
         <div asp-validation-summary="All" class="text-danger"></div>
         @if (Model.RequirePassword)
         {
-        <div class="form-group">
-            <label asp-for="Input.Password"></label>
-            <input asp-for="Input.Password" class="form-control" />
-            <span asp-validation-for="Input.Password" class="text-danger"></span>
-        </div>
+            <div class="form-group">
+                <label asp-for="Input.Password">@IdentityLocalizer.GetLocalizedHtmlString("PASSWORD")</label>
+                <input asp-for="Input.Password" class="form-control" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
         }
-        <button class="btn btn-danger" type="submit">Delete data and close my account</button>
+            <button class="btn btn-danger" type="submit">@IdentityLocalizer.GetLocalizedHtmlString("DELETE_PERSONAL_DATA_AND_CLOSE")</button>
     </form>
 </div>
 
 @section Scripts {
-<partial name="_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
 }

@@ -1,12 +1,13 @@
 ﻿@page
 @model ConfirmEmailModel
 @{
-    ViewData["Title"] = "Confirm email";
+    ViewData["Title"] = @IdentityLocalizer.GetLocalizedHtmlString("CONFIRM_EMAIL");
 }
+@inject IdentityLocalizationService IdentityLocalizer
 
 <h2>@ViewData["Title"]</h2>
 <div>
     <p>
-        Thank you for confirming your email.
+        @IdentityLocalizer.GetLocalizedHtmlString("CONFIRM_EMAIL_TEXT")
     </p>
 </div>

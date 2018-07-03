@@ -1,23 +1,24 @@
 ﻿@page
 @model PersonalDataModel
 @{
-    ViewData["Title"] = "Personal Data";
+    ViewData["Title"] = @IdentityLocalizer.GetLocalizedHtmlString("PERSONAL_DATA");
     ViewData["ActivePage"] = ManageNavPages.PersonalData;
 }
+@inject IdentityLocalizationService IdentityLocalizer
 
 <h4>@ViewData["Title"]</h4>
 
 <div class="row">
     <div class="col-md-6">
-        <p>Your account contains personal data that you have given us. This page allows you to download or delete that data.</p>
+        <p>@IdentityLocalizer.GetLocalizedHtmlString("PERSONAL_DATA_INFO")</p>
         <p>
-            <strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
+            <strong>@IdentityLocalizer.GetLocalizedHtmlString("PERSONAL_DATA_DELETEINFO")</strong>
         </p>
         <form asp-page="DownloadPersonalData" method="post" class="form-group">
-            <button class="btn btn-primary" type="submit">Download</button>
+            <button class="btn btn-primary" type="submit">@IdentityLocalizer.GetLocalizedHtmlString("DOWNLOAD")</button>
         </form>
         <p>
-            <a asp-page="DeletePersonalData" class="btn btn-primary">Delete</a>
+            <a asp-page="DeletePersonalData" class="btn btn-primary">@IdentityLocalizer.GetLocalizedHtmlString("DELETE")</a>
         </p>
     </div>
 </div>

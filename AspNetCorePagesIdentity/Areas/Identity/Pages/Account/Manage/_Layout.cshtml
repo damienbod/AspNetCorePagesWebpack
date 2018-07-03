@@ -1,11 +1,12 @@
-﻿@{ 
+﻿@{
     Layout = "/Pages/Shared/_Layout.cshtml";
 }
+@inject IdentityLocalizationService IdentityLocalizer
 
-<h2>Manage your account</h2>
+<h2>@IdentityLocalizer.GetLocalizedHtmlString("MANAGE_YOUR_ACCOUNT")</h2>
 
 <div>
-    <h4>Change your account settings</h4>
+    <h4>@IdentityLocalizer.GetLocalizedHtmlString("MANAGE_CAHNGE_ACCOUNT_SETTINGS")</h4>
     <hr />
     <div class="row">
         <div class="col-md-3">

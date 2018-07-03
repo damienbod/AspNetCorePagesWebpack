@@ -1,5 +1,5 @@
 @using Microsoft.AspNetCore.Identity
-
+@inject SharedLocalizationService SharedLocalizer
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
@@ -8,10 +8,10 @@
     <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })" method="post" id="logoutForm" class="navbar-right">
         <ul class="nav navbar-nav navbar-right">
             <li class="nav-item">
-                <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@SharedLocalizer.GetLocalizedHtmlString("HELLO") @UserManager.GetUserName(User)!</a>
             </li>
             <li class="nav-item">
-                <button type="submit" class="btn btn-link navbar-btn navbar-link">Logout</button>
+                <button type="submit" class="btn btn-link navbar-btn navbar-link">@SharedLocalizer.GetLocalizedHtmlString("LOGOUT")</button>
             </li>
         </ul>
     </form>
@@ -19,8 +19,8 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a></li>
-        <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+        <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Register">@SharedLocalizer.GetLocalizedHtmlString("REGISTER")</a></li>
+        <li class="nav-item"><a class="nav-link" asp-area="Identity" asp-page="/Account/Login">@SharedLocalizer.GetLocalizedHtmlString("LOGIN")</a></li>
     </ul>
 }
 

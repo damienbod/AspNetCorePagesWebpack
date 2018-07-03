@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Reflection;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using AspNetCorePagesIdentity.Resources;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Localization;
 
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
 {
@@ -16,11 +17,16 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly IEmailSender _emailSender;
+        private readonly IStringLocalizer _identityLocalizer;
 
-        public ForgotPasswordModel(UserManager<IdentityUser> userManager, IEmailSender emailSender)
+        public ForgotPasswordModel(UserManager<IdentityUser> userManager, IEmailSender emailSender, IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _emailSender = emailSender;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         [BindProperty]
@@ -28,8 +34,8 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
-            [EmailAddress]
+            [Required(ErrorMessage = "EMAIL_REQUIRED")]
+            [EmailAddress(ErrorMessage = "EMAIL_INVALID")]
             public string Email { get; set; }
         }
 
@@ -54,9 +60,8 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account
                     protocol: Request.Scheme);
 
                 await _emailSender.SendEmailAsync(
-                    Input.Email,
-                    "Reset Password",
-                    $"Please reset your password by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                    Input.Email, _identityLocalizer["RESET_PASSWORD"],
+                    _identityLocalizer["RESET_PASSWORD_EMAIL_TEXT", HtmlEncoder.Default.Encode(callbackUrl)]);
 
                 return RedirectToPage("./ForgotPasswordConfirmation");
             }

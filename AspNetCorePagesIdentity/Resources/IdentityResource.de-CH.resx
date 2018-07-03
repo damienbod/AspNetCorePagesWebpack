@@ -285,4 +285,10 @@
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
     <value>Das  {0} muss mindestens  {2} und darf höchstens  {1} Zeichen lang sein.</value>
   </data>
+  <data name="TWOFACTORCODE_REQUIRED" xml:space="preserve">
+    <value>Two-factor code is required de</value>
+  </data>
+  <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
+    <value>Verification code is required de</value>
+  </data>
 </root>

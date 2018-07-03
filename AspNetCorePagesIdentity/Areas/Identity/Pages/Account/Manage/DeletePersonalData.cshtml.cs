@@ -29,7 +29,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "PASSWORD_REQUIRED")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
         }

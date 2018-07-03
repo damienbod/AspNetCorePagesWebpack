@@ -405,6 +405,21 @@
   <data name="VERIFICATION_CODE" xml:space="preserve">
     <value>Bestätigungscode</value>
   </data>
+  <data name="EXTERNAL_LOGINS_REGISTERED_LOGIN" xml:space="preserve">
+    <value>Registrierte Anmeldungen</value>
+  </data>
+  <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
+    <value>Verwalten Sie Ihre externen Logins</value>
+  </data>
+  <data name="REMOVE" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
+    <value>Die externe Anmeldung wurde hinzugefügt.</value>
+  </data>
+  <data name="STATUS_EXTERNAL_LOGIN_REMOVED" xml:space="preserve">
+    <value>Die externe Anmeldung wurde entfernt.</value>
+  </data>
   <data name="VERIFY" xml:space="preserve">
     <value>Überprüfen</value>
   </data>

@@ -333,4 +333,19 @@
   <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
     <value>Verification code is required</value>
   </data>
+  <data name="DELETE_PERSONAL_DATA" xml:space="preserve">
+    <value>Delete Personal Data</value>
+  </data>
+  <data name="DELETE_PERSONAL_DATA_AND_CLOSE" xml:space="preserve">
+    <value>Delete data and close my account</value>
+  </data>
+  <data name="DELETE_PERSONAL_DATA_TEXT" xml:space="preserve">
+    <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
+  </data>
+  <data name="DELETE_USER_NOTFOUND" xml:space="preserve">
+    <value>Unable to load user with ID '{0}'.</value>
+  </data>
+  <data name="INCORRECT_PASSWORD" xml:space="preserve">
+    <value>Password is not correct</value>
+  </data>
 </root>

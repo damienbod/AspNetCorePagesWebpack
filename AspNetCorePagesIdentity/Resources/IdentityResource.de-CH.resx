@@ -333,4 +333,19 @@
   <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
     <value>Bestätigungscode wird benötigt</value>
   </data>
+  <data name="DELETE_PERSONAL_DATA" xml:space="preserve">
+    <value>Löschen Sie persönliche Daten</value>
+  </data>
+  <data name="DELETE_PERSONAL_DATA_AND_CLOSE" xml:space="preserve">
+    <value>Löschen Sie Daten und schließen Sie mein Konto</value>
+  </data>
+  <data name="DELETE_PERSONAL_DATA_TEXT" xml:space="preserve">
+    <value>Durch das Löschen dieser Daten wird Ihr Konto dauerhaft gelöscht. Dies kann nicht wiederhergestellt werden.</value>
+  </data>
+  <data name="DELETE_USER_NOTFOUND" xml:space="preserve">
+    <value>Benutzer konnte nicht mit ID  '{0}' geladen werden.</value>
+  </data>
+  <data name="INCORRECT_PASSWORD" xml:space="preserve">
+    <value>Das Passwort ist nicht korrekt</value>
+  </data>
 </root>

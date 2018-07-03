@@ -471,6 +471,18 @@
   <data name="SEND_VERIFICATION_EMAIL" xml:space="preserve">
     <value>Send verification email</value>
   </data>
+  <data name="SET_PASSWORD" xml:space="preserve">
+    <value>Set password</value>
+  </data>
+  <data name="SET_PASSWORD_STATUS" xml:space="preserve">
+    <value>Your password has been set.</value>
+  </data>
+  <data name="SET_PASSWORD_TEXT" xml:space="preserve">
+    <value>You do not have a local username/password for this site. Add a local account so you can log in without an external login.</value>
+  </data>
+  <data name="SET_YOUR_PASSWORD" xml:space="preserve">
+    <value>Set your password</value>
+  </data>
   <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
     <value>The external login was added.</value>
   </data>

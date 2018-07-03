@@ -465,6 +465,18 @@
   <data name="SEND_VERIFICATION_EMAIL" xml:space="preserve">
     <value>Senden Sie E-Mail-Verifizierung</value>
   </data>
+  <data name="SET_PASSWORD" xml:space="preserve">
+    <value>Passwort festlegen</value>
+  </data>
+  <data name="SET_PASSWORD_STATUS" xml:space="preserve">
+    <value>Ihr Passwort wurde festgelegt.</value>
+  </data>
+  <data name="SET_PASSWORD_TEXT" xml:space="preserve">
+    <value>Sie haben keinen lokalen Benutzernamen / Passwort für diese Site. Fügen Sie ein lokales Konto hinzu, damit Sie sich ohne externe Anmeldung anmelden können.</value>
+  </data>
+  <data name="SET_YOUR_PASSWORD" xml:space="preserve">
+    <value>Lege ein Passwort fest</value>
+  </data>
   <data name="STATUS_EXTERNAL_LOGIN_ADDED" xml:space="preserve">
     <value>Die externe Anmeldung wurde hinzugefügt.</value>
   </data>

@@ -20,3 +20,11 @@
 /AspNetCorePagesIdentity/wwwroot/css
 /AspNetCorePagesIdentity/wwwroot/dist
 /AspNetCorePagesIdentity/wwwroot/assets
+/AspNetCorePagesIdentity/Client/main.js
+/AspNetCorePagesIdentity/Client/main.js.map
+/AspNetCorePagesIdentity/Client/polyfills.js
+/AspNetCorePagesIdentity/Client/polyfills.js.map
+/AspNetCorePagesIdentity/Client/vendor.development.js
+/AspNetCorePagesIdentity/Client/vendor.development.js.map
+/AspNetCorePagesIdentity/Client/vendor.production.js
+/AspNetCorePagesIdentity/Client/vendor.production.js.map

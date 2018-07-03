@@ -50,7 +50,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound(_identityLocalizer["DELETE_USER_NOTFOUND", _userManager.GetUserId(User)]);
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             RequirePassword = await _userManager.HasPasswordAsync(user);
@@ -62,7 +62,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound(_identityLocalizer["DELETE_USER_NOTFOUND", _userManager.GetUserId(User)]);
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             RequirePassword = await _userManager.HasPasswordAsync(user);

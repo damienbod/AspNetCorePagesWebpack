@@ -294,9 +294,6 @@
   <data name="CHANGE_PASSWORD_STATUS" xml:space="preserve">
     <value>Ihr Passwort wurde geändert.</value>
   </data>
-  <data name="CHANGE_PASSWORD_USER_NOTFOUND" xml:space="preserve">
-    <value>Benutzer konnte nicht mit ID  '{0}' geladen werden.</value>
-  </data>
   <data name="CURRENT_PASSWORD" xml:space="preserve">
     <value>Aktuelles Passwort</value>
   </data>
@@ -342,10 +339,28 @@
   <data name="DELETE_PERSONAL_DATA_TEXT" xml:space="preserve">
     <value>Durch das Löschen dieser Daten wird Ihr Konto dauerhaft gelöscht. Dies kann nicht wiederhergestellt werden.</value>
   </data>
-  <data name="DELETE_USER_NOTFOUND" xml:space="preserve">
-    <value>Benutzer konnte nicht mit ID  '{0}' geladen werden.</value>
+  <data name="DISABLE_2FA" xml:space="preserve">
+    <value>Deaktivieren Sie die Zwei-Faktor-Authentifizierung (2FA)</value>
+  </data>
+  <data name="DISABLE_2FA_BUTTON" xml:space="preserve">
+    <value>Deaktivieren Sie 2FA</value>
+  </data>
+  <data name="DISABLE_2FA_STATUS" xml:space="preserve">
+    <value>2FA wurde deaktiviert. Sie können 2FA aktivieren, wenn Sie eine Authenticator-App einrichten</value>
+  </data>
+  <data name="DISABLE_2FA_TEXT_DETAILS" xml:space="preserve">
+    <value>Durch das Deaktivieren von 2FA werden die in Authenticator-Apps verwendeten Schlüssel nicht geändert. Wenn Sie den in einer Authenticator-App verwendeten Schlüssel ändern möchten, sollten Sie Ihre Authentifizierungsschlüssel</value>
+  </data>
+  <data name="DISABLE_2FA_TEXT_DETAILS_LINK" xml:space="preserve">
+    <value>zurücksetzen.</value>
+  </data>
+  <data name="DISABLE_2FA_TEXT_HEADER" xml:space="preserve">
+    <value>Diese Aktion deaktiviert nur 2FA.</value>
   </data>
   <data name="INCORRECT_PASSWORD" xml:space="preserve">
     <value>Das Passwort ist nicht korrekt</value>
+  </data>
+  <data name="USER_NOTFOUND" xml:space="preserve">
+    <value>Benutzer konnte nicht mit ID  '{0}' geladen werden.</value>
   </data>
 </root>

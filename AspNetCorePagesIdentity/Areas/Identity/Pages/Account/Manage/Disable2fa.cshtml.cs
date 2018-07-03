@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using AspNetCorePagesIdentity.Resources;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
@@ -13,13 +16,19 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<Disable2faModel> _logger;
+        private readonly IStringLocalizer _identityLocalizer;
 
         public Disable2faModel(
             UserManager<IdentityUser> userManager,
-            ILogger<Disable2faModel> logger)
+            ILogger<Disable2faModel> logger,
+            IStringLocalizerFactory factory)
         {
             _userManager = userManager;
             _logger = logger;
+
+            var type = typeof(IdentityResource);
+            var assemblyName = new AssemblyName(type.GetTypeInfo().Assembly.FullName);
+            _identityLocalizer = factory.Create("IdentityResource", assemblyName.Name);
         }
 
         [TempData]
@@ -30,7 +39,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             if (!await _userManager.GetTwoFactorEnabledAsync(user))
@@ -46,7 +55,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+                return NotFound(_identityLocalizer["USER_NOTFOUND", _userManager.GetUserId(User)]);
             }
 
             var disable2faResult = await _userManager.SetTwoFactorEnabledAsync(user, false);
@@ -56,7 +65,7 @@ namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
             }
 
             _logger.LogInformation("User with ID '{UserId}' has disabled 2fa.", _userManager.GetUserId(User));
-            StatusMessage = "2fa has been disabled. You can reenable 2fa when you setup an authenticator app";
+            StatusMessage = _identityLocalizer["DISABLE_2FA_STATUS"];
             return RedirectToPage("./TwoFactorAuthentication");
         }
     }

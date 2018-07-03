@@ -294,9 +294,6 @@
   <data name="CHANGE_PASSWORD_STATUS" xml:space="preserve">
     <value>Your password has been changed.</value>
   </data>
-  <data name="CHANGE_PASSWORD_USER_NOTFOUND" xml:space="preserve">
-    <value>Unable to load user with ID '{0}'.</value>
-  </data>
   <data name="CURRENT_PASSWORD" xml:space="preserve">
     <value>Current password</value>
   </data>
@@ -342,10 +339,28 @@
   <data name="DELETE_PERSONAL_DATA_TEXT" xml:space="preserve">
     <value>Deleting this data will permanently remove your account, and this cannot be recovered.</value>
   </data>
-  <data name="DELETE_USER_NOTFOUND" xml:space="preserve">
-    <value>Unable to load user with ID '{0}'.</value>
+  <data name="DISABLE_2FA" xml:space="preserve">
+    <value>Disable two-factor authentication (2FA)</value>
+  </data>
+  <data name="DISABLE_2FA_BUTTON" xml:space="preserve">
+    <value>Disable 2FA</value>
+  </data>
+  <data name="DISABLE_2FA_STATUS" xml:space="preserve">
+    <value>2fa has been disabled. You can reenable 2fa when you setup an authenticator app</value>
+  </data>
+  <data name="DISABLE_2FA_TEXT_DETAILS" xml:space="preserve">
+    <value>Disabling 2FA does not change the keys used in authenticator apps. If you wish to change the key used in an authenticator app you should</value>
+  </data>
+  <data name="DISABLE_2FA_TEXT_DETAILS_LINK" xml:space="preserve">
+    <value>reset your authenticator keys.</value>
+  </data>
+  <data name="DISABLE_2FA_TEXT_HEADER" xml:space="preserve">
+    <value>This action only disables 2FA.</value>
   </data>
   <data name="INCORRECT_PASSWORD" xml:space="preserve">
     <value>Password is not correct</value>
+  </data>
+  <data name="USER_NOTFOUND" xml:space="preserve">
+    <value>Unable to load user with ID '{0}'.</value>
   </data>
 </root>

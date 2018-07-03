@@ -208,7 +208,7 @@
     <value>Zurücksetzen</value>
   </data>
   <data name="RESET_YOUR_PASSWORD" xml:space="preserve">
-    <value>Reset your password de</value>
+    <value>Setze dein Passwort zurück</value>
   </data>
   <data name="RESET_PASSWORD" xml:space="preserve">
     <value>Zurücksetzen Passwort</value>
@@ -235,78 +235,78 @@
     <value>Fehler beim Laden der externen Anmeldeinformationen.</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA" xml:space="preserve">
-    <value>Two-factor authentication de</value>
+    <value>Zwei-Faktor-Authentifizierung</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA_NO_AUTHENTICATOR_DEVICE" xml:space="preserve">
-    <value>Don't have access to your authenticator device? You can (de)</value>
+    <value>Haben Sie keinen Zugriff auf Ihr Authentifizierungsgerät? Sie können</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA_RECOVERY_CODE_TEXT" xml:space="preserve">
-    <value>log in with a recovery code de</value>
+    <value>Einloggen mit einem Wiederherstellungscode</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA_REMEMBER_MC" xml:space="preserve">
-    <value>Remember this machine de</value>
+    <value>Maschine merken</value>
   </data>
   <data name="ACCOUNT_LOGIN_2FA_TEXT" xml:space="preserve">
-    <value>Your login is protected with an authenticator app. Enter your authenticator code below. de</value>
+    <value>Ihr Login ist mit einer Authenticator App geschützt. Geben Sie unten Ihren Authentifizierungscode ein.</value>
   </data>
   <data name="ACCOUNT_LOGIN_AUTHENTICATOR_CODE" xml:space="preserve">
-    <value>Authenticator code de</value>
+    <value>Authentifizierungscode</value>
   </data>
   <data name="ACCOUNT_RECOVERY_CODE" xml:space="preserve">
-    <value>Recovery code de</value>
+    <value>Wiederherstellungscode</value>
   </data>
   <data name="ACCOUNT_RECOVERY_CODE_REQUIRED" xml:space="preserve">
-    <value>Recovery code required de</value>
+    <value>Wiederherstellungscode erforderlich</value>
   </data>
   <data name="ACCOUNT_RECOVERY_CODE_VERIFICATION" xml:space="preserve">
-    <value>Recovery code verification de</value>
+    <value>Überprüfung des Wiederherstellungscodes</value>
   </data>
   <data name="ACCOUNT_RECOVERY_CODE_VERIFICATION_TEXT" xml:space="preserve">
-    <value>You have requested to log in with a recovery code. This login will not be remembered until you provide an authenticator app code at log in or disable 2FA and log in again. de</value>
+    <value>Sie haben sich mit einem Wiederherstellungscode angemeldet. Diese Anmeldung wird nicht gespeichert, bis Sie beim Anmelden einen authenticator-App-Code angeben oder 2FA deaktivieren und sich erneut anmelden.</value>
   </data>
   <data name="INVALID_AUTHENTICATOR_CODE" xml:space="preserve">
-    <value>Invalid authenticator code. de</value>
+    <value>Ungültiger Authentifizierungscode</value>
   </data>
   <data name="INVALID_RECOVERY_CODE" xml:space="preserve">
-    <value>Invalid recovery code entered. de</value>
+    <value>Ungültiger Wiederherstellungscode eingegeben</value>
   </data>
   <data name="LOGOUT_TEXT" xml:space="preserve">
     <value>Sie haben sich erfolgreich von der Anwendung abgemeldet.</value>
   </data>
   <data name="RESET_PASSWORD_CONFIRMATION" xml:space="preserve">
-    <value>Reset password confirmation de</value>
+    <value>Passwort zurücksetzen Bestätigung</value>
   </data>
   <data name="RESET_PASSWORD_CONFIRMATION_CLICK_HERE" xml:space="preserve">
-    <value>click here to log in (de)</value>
+    <value>Klicken Sie hier, um sich einzuloggen</value>
   </data>
   <data name="RESET_PASSWORD_CONFIRMATION_TEXT1" xml:space="preserve">
-    <value>Your password has been reset. Please (de)</value>
+    <value>Dein Passwort wurde zurück gesetzt. Bitte</value>
   </data>
   <data name="The {0} must be at least {2} and at max {1} characters long." xml:space="preserve">
     <value>Das  {0} muss mindestens  {2} und darf höchstens  {1} Zeichen lang sein.</value>
   </data>
   <data name="2FA" xml:space="preserve">
-    <value>Two-factor authentication de</value>
+    <value>Zwei-Faktor-Authentifizierung</value>
   </data>
   <data name="EXTERNAL_LOGINS" xml:space="preserve">
-    <value>External logins de</value>
+    <value>Externe Logins</value>
   </data>
   <data name="MANAGE_CAHNGE_ACCOUNT_SETTINGS" xml:space="preserve">
-    <value>Change your account settings de</value>
+    <value>Ändern Sie Ihre Benutzereinstellungen</value>
   </data>
   <data name="MANAGE_YOUR_ACCOUNT" xml:space="preserve">
-    <value>Manage your account de</value>
+    <value>Ändern Sie Ihre Benutzereinstellungen</value>
   </data>
   <data name="PERSONAL_DATA" xml:space="preserve">
     <value>Personal data de</value>
   </data>
   <data name="PROFILE" xml:space="preserve">
-    <value>Profile de</value>
+    <value>Profil</value>
   </data>
   <data name="TWOFACTORCODE_REQUIRED" xml:space="preserve">
-    <value>Two-factor code is required de</value>
+    <value>Zwei-Faktor-Code ist erforderlich</value>
   </data>
   <data name="VERIFICATION_CODE_REQUIRED" xml:space="preserve">
-    <value>Verification code is required de</value>
+    <value>Bestätigungscode wird benötigt</value>
   </data>
 </root>

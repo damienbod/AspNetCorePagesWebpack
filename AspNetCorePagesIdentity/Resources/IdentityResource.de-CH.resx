@@ -456,6 +456,18 @@
   <data name="REMOVE" xml:space="preserve">
     <value>Löschen</value>
   </data>
+  <data name="RESET_AUTHENTICATOR_INFO" xml:space="preserve">
+    <value>Wenn Sie Ihren Authentifikatorschlüssel zurücksetzen, funktioniert Ihre Authentifizierungsanwendung erst, wenn Sie sie neu konfigurieren.</value>
+  </data>
+  <data name="RESET_AUTHENTICATOR_KEY" xml:space="preserve">
+    <value>Authentifizierungsschlüssel zurücksetzen</value>
+  </data>
+  <data name="RESET_AUTHENTICATOR_STATUS" xml:space="preserve">
+    <value>Ihr Authentifikator-App-Schlüssel wurde zurückgesetzt. Sie müssen Ihre Authentifikator-App mit dem neuen Schlüssel konfigurieren.</value>
+  </data>
+  <data name="RESET_AUTHENTICATOR_TEXT" xml:space="preserve">
+    <value>Dieser Prozess deaktiviert 2FA, bis Sie Ihre Authentifikator-App überprüft haben. Wenn Sie Ihre Authentifikator-App-Konfiguration nicht abschließen, verlieren Sie möglicherweise den Zugriff auf Ihr Konto.</value>
+  </data>
   <data name="RESET_RECOVERY_CODES" xml:space="preserve">
     <value>Setzen Sie die Wiederherstellungscodes zurück</value>
   </data>

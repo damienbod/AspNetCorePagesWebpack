@@ -462,6 +462,18 @@
   <data name="REMOVE" xml:space="preserve">
     <value>Remove</value>
   </data>
+  <data name="RESET_AUTHENTICATOR_INFO" xml:space="preserve">
+    <value>If you reset your authenticator key your authenticator app will not work until you reconfigure it.</value>
+  </data>
+  <data name="RESET_AUTHENTICATOR_KEY" xml:space="preserve">
+    <value>Reset authenticator key</value>
+  </data>
+  <data name="RESET_AUTHENTICATOR_STATUS" xml:space="preserve">
+    <value>Your authenticator app key has been reset, you will need to configure your authenticator app using the new key.</value>
+  </data>
+  <data name="RESET_AUTHENTICATOR_TEXT" xml:space="preserve">
+    <value>This process disables 2FA until you verify your authenticator app. If you do not complete your authenticator app configuration you may lose access to your account.</value>
+  </data>
   <data name="RESET_RECOVERY_CODES" xml:space="preserve">
     <value>Reset recovery codes</value>
   </data>

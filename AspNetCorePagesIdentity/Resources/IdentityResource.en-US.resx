@@ -423,11 +423,20 @@
   <data name="2FA_NO_CODES_LEFT" xml:space="preserve">
     <value>You have no recovery codes left.</value>
   </data>
+  <data name="2FA_NO_CODES_LEFT_TEXT" xml:space="preserve">
+    <value>You must generate a new set of recovery codes before you can log in with a recovery code.</value>
+  </data>
   <data name="2FA_N_CODES_LEFT" xml:space="preserve">
     <value>You have {0} recovery codes left.</value>
   </data>
+  <data name="2FA_N_CODES_LEFT_TEXT" xml:space="preserve">
+    <value>You should generate a new set of recovery codes.</value>
+  </data>
   <data name="2FA_ONE_CODES_LEFT" xml:space="preserve">
     <value>You have 1 recovery code left.</value>
+  </data>
+  <data name="2FA_ONE_CODES_LEFT_TEXT" xml:space="preserve">
+    <value>You can generate a new set of recovery codes.</value>
   </data>
   <data name="2FA_STATUS_BROWSER_FORGET" xml:space="preserve">
     <value>The current browser has been forgotten. When you login again from this browser you will be prompted for your 2fa code.</value>
@@ -449,6 +458,9 @@
   </data>
   <data name="FORGET_THIS_BROWSER" xml:space="preserve">
     <value>Forget this browser</value>
+  </data>
+  <data name="GENERATE" xml:space="preserve">
+    <value>Generate</value>
   </data>
   <data name="GENERATE_2FA_RECOVERY_CODES" xml:space="preserve">
     <value>Generate two-factor authentication (2FA) recovery codes</value>

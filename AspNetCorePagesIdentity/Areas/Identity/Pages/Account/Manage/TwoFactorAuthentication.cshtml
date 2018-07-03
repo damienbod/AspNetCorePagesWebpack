@@ -11,23 +11,24 @@
 {
     if (Model.RecoveryCodesLeft == 0)
     {
-        <div class="alert alert-danger">
-            <strong>@IdentityLocalizer.GetLocalizedHtmlString("2FA_NO_CODES_LEFT")</strong>
-            <p>You must <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a> before you can log in with a recovery code.</p>
-        </div>
+<div class="alert alert-danger">
+    <strong>@IdentityLocalizer.GetLocalizedHtmlString("2FA_NO_CODES_LEFT")</strong>
+    
+    <p>@IdentityLocalizer.GetLocalizedHtmlString("2FA_NO_CODES_LEFT_TEXT") <a asp-page="./GenerateRecoveryCodes">@IdentityLocalizer.GetLocalizedHtmlString("GENERATE")</a></p>
+</div>
     }
     else if (Model.RecoveryCodesLeft == 1)
     {
         <div class="alert alert-danger">
             <strong>@IdentityLocalizer.GetLocalizedHtmlString("2FA_ONE_CODES_LEFT")</strong>
-            <p>You can <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
+            <p>@IdentityLocalizer.GetLocalizedHtmlString("2FA_ONE_CODES_LEFT_TEXT")  You can generate a new set of recovery codes. <a asp-page="./GenerateRecoveryCodes">@IdentityLocalizer.GetLocalizedHtmlString("GENERATE")</a></p>
         </div>
     }
     else if (Model.RecoveryCodesLeft <= 3)
     {
         <div class="alert alert-warning">
             <strong>@IdentityLocalizer.GetLocalizedHtmlString("2FA_N_CODES_LEFT", @Model.RecoveryCodesLeft.ToString())</strong>
-            <p>You should <a asp-page="./GenerateRecoveryCodes">generate a new set of recovery codes</a>.</p>
+            <p>@IdentityLocalizer.GetLocalizedHtmlString("2FA_N_CODES_LEFT_TEXT") <a asp-page="./GenerateRecoveryCodes">@IdentityLocalizer.GetLocalizedHtmlString("GENERATE")</a></p>
         </div>
     }
 

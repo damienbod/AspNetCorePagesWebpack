@@ -420,11 +420,20 @@
   <data name="2FA_NO_CODES_LEFT" xml:space="preserve">
     <value>Sie haben keine Wiederherstellungscodes mehr.</value>
   </data>
+  <data name="2FA_NO_CODES_LEFT_TEXT" xml:space="preserve">
+    <value>Sie müssen einen neuen Satz von Wiederherstellungscodes generieren, bevor Sie sich mit einem Wiederherstellungscode anmelden können.</value>
+  </data>
   <data name="2FA_N_CODES_LEFT" xml:space="preserve">
     <value>Sie haben {0} Wiederherstellungscodes übrig.</value>
   </data>
+  <data name="2FA_N_CODES_LEFT_TEXT" xml:space="preserve">
+    <value>Sie sollten eine neue Reihe von Wiederherstellungscodes generieren.</value>
+  </data>
   <data name="2FA_ONE_CODES_LEFT" xml:space="preserve">
     <value>Sie haben 1 Wiederherstellungscode übrig.</value>
+  </data>
+  <data name="2FA_ONE_CODES_LEFT_TEXT" xml:space="preserve">
+    <value>Sie können einen neuen Satz von Wiederherstellungscodes generieren.</value>
   </data>
   <data name="2FA_STATUS_BROWSER_FORGET" xml:space="preserve">
     <value>Der aktuelle Browser wurde vergessen. Wenn Sie sich erneut von diesem Browser aus anmelden, werden Sie aufgefordert, Ihren 2fa-Code einzugeben.</value>
@@ -443,6 +452,9 @@
   </data>
   <data name="EXTERNAL_LOGINS_TITLE" xml:space="preserve">
     <value>Verwalten Sie Ihre externen Logins</value>
+  </data>
+  <data name="GENERATE" xml:space="preserve">
+    <value>Generieren</value>
   </data>
   <data name="GENERATE_2FA_RECOVERY_CODES" xml:space="preserve">
     <value>Generieren Sie Wiederherstellungscodes für 2-Faktor-Authentifizierung (2FA)</value>

@@ -357,6 +357,9 @@
   <data name="DISABLE_2FA_TEXT_HEADER" xml:space="preserve">
     <value>This action only disables 2FA.</value>
   </data>
+  <data name="DOWNLOAD_YOUR_DATA" xml:space="preserve">
+    <value>Download Your Data</value>
+  </data>
   <data name="INCORRECT_PASSWORD" xml:space="preserve">
     <value>Password is not correct</value>
   </data>

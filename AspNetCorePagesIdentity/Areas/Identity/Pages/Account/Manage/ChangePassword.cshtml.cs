@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
+
 namespace AspNetCorePagesIdentity.Areas.Identity.Pages.Account.Manage
 {
     public class ChangePasswordModel : PageModel

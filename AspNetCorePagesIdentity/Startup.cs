@@ -62,7 +62,7 @@ namespace AspNetCorePagesIdentity
                     options.RequestCultureProviders.Insert(0, new CookieRequestCultureProvider());
                 });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
                 .AddViewLocalization()
                 .AddDataAnnotationsLocalization(options =>
                 {

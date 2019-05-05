@@ -13,6 +13,8 @@ https://damienbod.com/2018/07/03/adding-localization-to-the-asp-net-core-identit
 
 ## History
 
+2019-05-05 Updated packages
+
 2019-02-18 Updated to .NET Core 2.2
 
 ## Links:
